@@ -1,0 +1,3 @@
+The two targets may be the same player or they may be different players.
+If The Supplier affects a suspended card, the card loses its time counters and is no longer suspended. (This doesn’t trigger the last ability of suspend.)
+If The Supplier affects a card that’s haunting a creature, the haunt effect ends.

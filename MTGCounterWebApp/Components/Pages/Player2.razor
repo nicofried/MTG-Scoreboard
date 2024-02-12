@@ -1,0 +1,24 @@
+@page "/player2"
+@inject HttpClient Http
+
+<PageTitle>@Playername2</PageTitle>
+<RadzenText Text="@Playername2" TextStyle="TextStyle.H3" TagName="TagName.H1" Style="width: 257px" />
+    @if (isAuthenticated)
+{
+    <RadzenImage Path="@TreacheryImagePath" Style="width: 400px" />
+    <RadzenButton Text="Unveil" Click="@Button0ClickPlayer1" />
+    <RadzenText Text="@TreacheryRuleText" TextStyle="TextStyle.H3" TagName="TagName.H1" Style="width: 812px; height: 249px; font-size: 14px"></RadzenText>
+
+    <br />
+    <label for="newPassword">New Password:</label>
+    <InputText id="newPassword" @bind-Value="newPassword" />
+    <RadzenButton Text="Set Password" Click="@SetNewPassword" />
+}
+else
+{
+    <EditForm Model="@this" OnValidSubmit="@HandleValidSubmit">
+        <label for="password">Password:</label>
+        <InputText id="password" @bind-Value="inputPassword" />
+        <button type="submit">Enter</button>
+    </EditForm>
+}

@@ -1,0 +1,9 @@
+NOTES AND RULES INFORMATION FOR THE AUGUR
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
+If X is 0, you won’t scry at all. Any abilities that trigger whenever you scry won’t trigger.
+Once The Augur’s unveiling triggered ability begins to resolve, no player may take other actions until it’s done. Notably, opponents can’t try to change your library after you scry but before you reveal the top card of your library.
+If the revealed card in your library has {X} in its mana cost, you must choose 0 as the value of X when casting it without paying its mana cost.
+The revealed card played with The Augur’s unveiling triggered ability is played from your library.
+If you play the revealed card, you do so as part of the resolution of the triggered ability. You can’t wait to play it later in the turn. Timing permissions based on the card’s type are ignored, but other restrictions (such as "Cast [this card] only during combat") are not.
+If you cast a card "without paying its mana cost," you can’t pay any alternative costs. You can, however, pay additional costs. If the card has any mandatory additional costs, such as that of Costly Plunder, those must be paid to cast the card.
+The converted mana cost of a split card is based on the combined mana cost of its two halves.

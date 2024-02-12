@@ -1,0 +1,4 @@
+You draw one card for each Dragon you controlled that attacked, even if some of them left the battlefield before The Ur-Dragon’s triggered ability resolves.
+You may only put one permanent card from your hand onto the battlefield, no matter how many Dragons you attacked with or how many players they attacked.
+If a Dragon you control enters the battlefield attacking, it won’t cause The Ur-Dragon’s last ability to trigger.
+The Ur-Dragon’s triggered ability resolves after all attackers have been chosen. You can’t attack with some Dragons, put a creature card with haste onto the battlefield, and then attack with that creature. Similarly, any “whenever a creature attacks” abilities of the permanent card you put onto the battlefield won’t trigger.

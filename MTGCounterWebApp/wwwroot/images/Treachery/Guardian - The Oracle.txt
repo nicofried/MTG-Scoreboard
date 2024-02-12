@@ -1,0 +1,13 @@
+---------- The following rulings focus on the "protection from" keyword ----------
+If a player has protection from everything, it means three things: 1) All damage that would be dealt to that player is prevented. 2) Auras can’t be attached to that player. 3) That player can’t be the target of spells or abilities.
+Nothing other than the specified events are prevented or illegal. An effect that doesn’t target you could still cause you to discard cards, for example. Creatures can still attack you while you have protection from everything, although combat damage that they would deal to you will be prevented.
+Gaining protection from everything causes a spell or ability on the stack to have an illegal target if it targets you. As a spell or ability tries to resolve, if all its targets are illegal, that spell or ability is countered and none of its effects happen, including effects unrelated to the target. If at least one target is still legal, the spell or ability does as much as it can to the remaining legal targets, and its other effects still happen.
+---------- The following rulings focus on what it means if your life total can’t change ----------
+Spells and abilities that would normally cause you to gain or lose life still resolve while your life total can’t change, but the life-gain or life-loss part simply has no effect.
+Protection from everything will usually prevent damage if it would be dealt to you, but some damage can’t be prevented. In this case, because your life total also can’t change, that damage has any other effects that it may have aside from causing you to lose that much life (such as effects from lifelink or infect) and triggers and effects can see that damage was dealt even though your life total didn’t change.
+You can’t pay a cost that includes the payment of any amount of life other than 0 life.
+If a cost includes causing you to gain life (like the alternative cost of an opponent’s Invigorate does), that cost can’t be paid.
+Effects that would replace having you gain life with some other event won’t be able to be applied because it’s impossible for you to gain life. The same is true for effects that would replace having you lose life with some other event.
+Effects that replace an event with having you gain life (like Words of Worship’s effect does) or having you lose life will apply and end up replacing the event with nothing.
+If an effect would set your life total to a certain number that’s different than your current life total, that part of the effect won’t do anything.
+If an effect would cause you to exchange life totals with another player, the exchange won’t happen. Neither player’s life total changes.

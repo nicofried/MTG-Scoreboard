@@ -1,0 +1,2 @@
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
+If a permanent affected by The Cryomancer changes controllers before its old controller’s next untap step, The Cryomancer will prevent it from becoming untapped during its new controller’s next untap step.

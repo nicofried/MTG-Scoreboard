@@ -1,0 +1,6 @@
+To choose four Traitor identity cards at random, you may for example shuffle the remaining ones from outside the game in a face-down pile, then choose and reveal the top four cards of that pile.
+The Wearer of Masks’ ability to become a copy is a replacement effect. Because turning an identity face up and applying replacement effects both don’t use the stack, players won’t be able to take actions between the time you announce that you’re turning The Wearer of Masks face up and the time it has become a copy of the identity of your choice.
+If you pay an Unveil cost with a {X}, you may choose a value for X.
+If an ability from the chosen identity card refers to X, it has the same chosen value as you paid the Unveil cost during the resolution of The Wearer of Masks’ ability.
+Any "[when/as] [this identity] is unveiled" abilities of the chosen identity card will work if The Wearer of Masks is unveiled. Any "[when/as] [this identity] is turned face up" abilities of the chosen identity card will work if The Wearer of Masks is turned face up or unveiled.
+When The Wearer of Masks is turned face down, its copy effect wears off. While it’s face down, it’s a Traitor identity card that can be turned face up for an unveil cost of {0}.

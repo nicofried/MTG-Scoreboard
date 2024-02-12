@@ -1,0 +1,4 @@
+Ramos's triggered ability counts the number of colors a spell has (from zero to five), not how many colored mana symbols are there in its mana cost or how many colors of mana you spent.
+If you cast a colorless spell, Ramos's triggered ability triggers, but it won't get any +1/+1 counters.
+Ramos's triggered ability doesn't trigger until you've finished casting a spell, including paying all of its costs. If Ramos has fewer than five +1/+1 counters on it, there's no way to add counters with a spell and pay for that spell with the newly-added counters.
+Ramos's triggered ability resolves before the spell that caused it to trigger. The ability will resolve even if that spell is countered. If that spell is countered, use its last known information to determine what colors it was.

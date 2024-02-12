@@ -1,0 +1,3 @@
+Experience counters are the second kind of counters a player can have, joining poison.
+All experience counters are identical, no matter how you got them. For example, the last ability will count experience counters that you got from the first ability, from another ability, from proliferating, and so on.
+Each game pack includes a card labeled “Experience” with the suggestion “Place your experience counters here.” This card isn't required for play. It's simply a convenient spot to put your experience counters, which can be represented with dice, glass beads, or other small items.

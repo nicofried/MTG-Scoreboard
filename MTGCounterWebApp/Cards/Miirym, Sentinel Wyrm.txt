@@ -1,0 +1,2 @@
+Miirym, Sentinel Wyrm's triggered ability copies the printed values of the Dragon that entered the battlefield. It won't copy any counters on that creature or any effects that have changed its power, toughness, types, color, and so on.
+If the Dragon that entered the battlefield is copying something else as the triggered ability resolves, the token will be a copy of whatever that creature is a copy of.

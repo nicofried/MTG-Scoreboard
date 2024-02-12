@@ -1,0 +1,5 @@
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
+The Marshal’s unveiling triggered ability checks the number you chose for X, not the amount of mana you actually spent.
+You do what the spell says in order. If X is 3 or more, you’ll put the creature tokens onto the battlefield, then you’ll destroy creatures.
+No one can cast spells or activate abilities between the time the creature tokens are put onto the battlefield and the time all other creatures are destroyed. For example, you can’t sacrifice one of those tokens to regenerate a Dimir House Guard.
+You must choose an existing creature type, such as Fish or Artificer. You can’t choose card types (e.g., artifact) or supertypes (e.g., snow).

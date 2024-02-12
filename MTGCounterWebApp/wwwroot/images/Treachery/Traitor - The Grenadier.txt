@@ -1,0 +1,2 @@
+NOTES AND RULES INFORMATION FOR THE GRENADIER
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.

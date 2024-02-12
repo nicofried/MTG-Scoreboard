@@ -1,0 +1,7 @@
+The Shapeshifting Slayer unveiling triggered ability doesn’t target the chosen creature.
+Other zones are graveyard, battlefield, stack, exile, ante, and command.
+As the token is created, it check the printed values of the creature it’s copying — or, if that creature is itself a token, the original characteristics of that token as stated by the effect that put it onto the battlefield — as well as any copy effects that have been applied to it. It won’t copy counters on the creature, nor will it copy other effects that have changed the creature’s power, toughness, types, color, or so on.
+If the copied creature has {X} in its mana cost, that X is considered to be 0.
+If the chosen creature is copying something else (for example, if the chosen creature is a Clone), then the Shapeshifting’s token enters the battlefield as whatever the chosen creature copied.
+If the chosen creature is a token, the Shapeshifting’s token copies the original characteristics of that token as stated by the effect that put the token onto the battlefield.
+Any enters-the-battlefield abilities of the copied creature will trigger when the Shapeshifting’s token enters the battlefield. Any "as [this creature] enters the battlefield" or "[this creature] enters the battlefield with" abilities of the chosen creature will also work.

@@ -1,0 +1,4 @@
+Damage that a creature with infect deals doesn't result in damage being marked on a creature or a player losing life. Instead, it results in that many -1/-1 counters being put on that creature or that many poison counters being given to that player. Damage dealt to planeswalkers still results in that planeswalker losing that many loyalty counters.
+A player who has ten or more poison counters loses the game. This is a state-based action.
+The -1/-1 counters remain on the creature indefinitely. They're not removed if the creature regenerates or the turn ends.
+Damage from a source with infect is damage in all respects. If the source with infect also has lifelink, damage dealt by that source also causes its controller to gain that much life. Damage from a source with infect can be prevented or redirected. Abilities that trigger on damage being dealt will trigger if a source with infect deals damage, if appropriate.

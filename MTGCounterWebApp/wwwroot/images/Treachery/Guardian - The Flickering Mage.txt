@@ -1,0 +1,5 @@
+All cards exiled with The Flickering Mage will return to the battlefield, even if they’re no longer creatures.
+If a creature token is exiled, it ceases to exist. It won’t be returned to the battlefield.
+If a double-faced card is exiled, it will return with its front face up.
+When the creatures are exiled, any Auras or Equipment on them fall off and any counters on them are removed. When they return to the battlefield, they come back tapped and are treated as new versions of the cards.
+Normally, the creatures will return to the battlefield at the end of the same turn they were exiled. But if they’re exiled during the End step, it’s too late to return them this turn. They have to wait to return to the battlefield until the next End step.

@@ -1,0 +1,2 @@
+Other players decide in turn order whether or not they accept the offering (choosing a nonenchantment, nontoken permanent and drawing a card). Each player will know the decisions of previous players in turn order when making their decision.
+After each other player has decided, the stealing effect happens simultaneously for each one who accepted the offering.
