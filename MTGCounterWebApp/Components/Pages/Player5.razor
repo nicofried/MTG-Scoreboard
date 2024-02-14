@@ -5,20 +5,28 @@
 <RadzenText Text="@Playername5" TextStyle="TextStyle.H3" TagName="TagName.H1" Style="width: 257px" />
     @if (isAuthenticated)
 {
-    <RadzenImage Path="@TreacheryImagePath" Style="width: 400px" />
-    <RadzenButton Text="Unveil" Click="@Button0ClickPlayer5" />
-    <RadzenText Text="@TreacheryRuleText" TextStyle="TextStyle.H3" TagName="TagName.H1" Style="width: 812px; height: 249px; font-size: 14px"></RadzenText>
-
-    <br />
-    <label for="newPassword">New Password:</label>
-    <InputText id="newPassword" @bind-Value="newPassword" />
-    <RadzenButton Text="Set Password" Click="@SetNewPassword" />
+    @if (MustChangePassword)
+    {
+        <div>
+            <h2>Please change your default password.</h2>
+            <label for="newPassword">New Password:</label>
+            <InputText id="newPassword" @bind-Value="newPassword" />
+            <RadzenButton Text="Set Password" Click="@SetNewPassword" />
+        </div>
+    }
+    else
+    {
+        <!-- Display other content when the user is authenticated and no password change is needed -->
+        <RadzenImage Path="@TreacheryImagePath" Style="width: 350px" />
+        <RadzenButton Style="width: 350px; height: 52px; font-size: 17px" Text="Unveil" Click="@Button0ClickPlayer5" />
+        <RadzenText Text="@TreacheryRuleText" TextStyle="TextStyle.H3" TagName="TagName.H1" Style="width: 350px; height: 500px; font-size: 14px"></RadzenText>
+    }
 }
 else
 {
     <EditForm Model="@this" OnValidSubmit="@HandleValidSubmit">
         <label for="password">Password:</label>
         <InputText id="password" @bind-Value="inputPassword" />
-        <button type="submit">Enter</button>
+        <RadzenButton Text="Enter" ButtonType="ButtonType.Submit" />
     </EditForm>
 }

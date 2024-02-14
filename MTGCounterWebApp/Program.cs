@@ -5,6 +5,9 @@ using SE_MTG;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Specify URLs to listen on both HTTP and HTTPS
+builder.WebHost.UseUrls("http://*:5000", "https://*:5001");
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
       .AddInteractiveServerComponents().AddHubOptions(options => options.MaximumReceiveMessageSize = 10 * 1024 * 1024);

@@ -81,6 +81,8 @@
             this.Player6Dead = new System.Windows.Forms.Label();
             this.Player7Dead = new System.Windows.Forms.Label();
             this.Player8Dead = new System.Windows.Forms.Label();
+            this.QRCode = new System.Windows.Forms.PictureBox();
+            this.ResetPassword = new RoundButton();
             this.Treachery8Unveil = new RoundButton();
             this.Treachery7Unveil = new RoundButton();
             this.P7CommanderDMGP8 = new CustomProgressBar();
@@ -170,7 +172,8 @@
             this.Player2AOEDMG = new RoundButton();
             this.Treachery1Unveil = new RoundButton();
             this.Player1AOEDMG = new RoundButton();
-            this.FetchCommander1 = new RoundButton();
+            this.WifiConnect = new System.Windows.Forms.PictureBox();
+            this.wificonnector = new RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.CommanderImage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery2)).BeginInit();
@@ -195,6 +198,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CommanderImage7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WifiConnect)).BeginInit();
             this.SuspendLayout();
             // 
             // CommanderImage1
@@ -216,6 +221,7 @@
             this.Commander1.Name = "Commander1";
             this.Commander1.Size = new System.Drawing.Size(222, 31);
             this.Commander1.TabIndex = 8;
+            this.Commander1.TextChanged += new System.EventHandler(this.Commander1_TextChanged);
             // 
             // CommandComboBox1
             // 
@@ -317,14 +323,14 @@
             this.Player1HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player1HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player1HP.Location = new System.Drawing.Point(78, 286);
+            this.Player1HP.Location = new System.Drawing.Point(88, 286);
             this.Player1HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player1HP.Name = "Player1HP";
-            this.Player1HP.Size = new System.Drawing.Size(94, 38);
+            this.Player1HP.Size = new System.Drawing.Size(84, 38);
             this.Player1HP.TabIndex = 290;
             this.Player1HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player1HP.ValueChanged += new System.EventHandler(this.Player1HP_ValueChanged);
@@ -347,14 +353,14 @@
             this.Player2HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player2HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player2HP.Location = new System.Drawing.Point(255, 286);
+            this.Player2HP.Location = new System.Drawing.Point(261, 286);
             this.Player2HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player2HP.Name = "Player2HP";
-            this.Player2HP.Size = new System.Drawing.Size(94, 38);
+            this.Player2HP.Size = new System.Drawing.Size(88, 38);
             this.Player2HP.TabIndex = 299;
             this.Player2HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player2HP.ValueChanged += new System.EventHandler(this.Player2HP_ValueChanged);
@@ -364,14 +370,14 @@
             this.Player3HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player3HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player3HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player3HP.Location = new System.Drawing.Point(430, 286);
+            this.Player3HP.Location = new System.Drawing.Point(438, 286);
             this.Player3HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player3HP.Name = "Player3HP";
-            this.Player3HP.Size = new System.Drawing.Size(94, 38);
+            this.Player3HP.Size = new System.Drawing.Size(86, 38);
             this.Player3HP.TabIndex = 300;
             this.Player3HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player3HP.ValueChanged += new System.EventHandler(this.Player3HP_ValueChanged);
@@ -435,14 +441,14 @@
             this.Player6HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player6HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player6HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player6HP.Location = new System.Drawing.Point(953, 286);
+            this.Player6HP.Location = new System.Drawing.Point(959, 286);
             this.Player6HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player6HP.Name = "Player6HP";
-            this.Player6HP.Size = new System.Drawing.Size(94, 38);
+            this.Player6HP.Size = new System.Drawing.Size(88, 38);
             this.Player6HP.TabIndex = 345;
             this.Player6HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player6HP.ValueChanged += new System.EventHandler(this.Player6HP_ValueChanged);
@@ -452,14 +458,14 @@
             this.Player5HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player5HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player5HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player5HP.Location = new System.Drawing.Point(778, 286);
+            this.Player5HP.Location = new System.Drawing.Point(786, 286);
             this.Player5HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player5HP.Name = "Player5HP";
-            this.Player5HP.Size = new System.Drawing.Size(94, 38);
+            this.Player5HP.Size = new System.Drawing.Size(86, 38);
             this.Player5HP.TabIndex = 344;
             this.Player5HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player5HP.ValueChanged += new System.EventHandler(this.Player5HP_ValueChanged);
@@ -481,14 +487,14 @@
             this.Player4HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player4HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player4HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player4HP.Location = new System.Drawing.Point(605, 284);
+            this.Player4HP.Location = new System.Drawing.Point(613, 284);
             this.Player4HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player4HP.Name = "Player4HP";
-            this.Player4HP.Size = new System.Drawing.Size(94, 38);
+            this.Player4HP.Size = new System.Drawing.Size(86, 38);
             this.Player4HP.TabIndex = 335;
             this.Player4HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player4HP.ValueChanged += new System.EventHandler(this.Player4HP_ValueChanged);
@@ -595,14 +601,14 @@
             this.Player8HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player8HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player8HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player8HP.Location = new System.Drawing.Point(1298, 284);
+            this.Player8HP.Location = new System.Drawing.Point(1306, 284);
             this.Player8HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player8HP.Name = "Player8HP";
-            this.Player8HP.Size = new System.Drawing.Size(94, 38);
+            this.Player8HP.Size = new System.Drawing.Size(86, 38);
             this.Player8HP.TabIndex = 371;
             this.Player8HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player8HP.ValueChanged += new System.EventHandler(this.Player8HP_ValueChanged);
@@ -612,14 +618,14 @@
             this.Player7HP.BackColor = System.Drawing.SystemColors.InfoText;
             this.Player7HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player7HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player7HP.Location = new System.Drawing.Point(1126, 286);
+            this.Player7HP.Location = new System.Drawing.Point(1133, 286);
             this.Player7HP.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.Player7HP.Name = "Player7HP";
-            this.Player7HP.Size = new System.Drawing.Size(94, 38);
+            this.Player7HP.Size = new System.Drawing.Size(87, 38);
             this.Player7HP.TabIndex = 370;
             this.Player7HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Player7HP.ValueChanged += new System.EventHandler(this.Player7HP_ValueChanged);
@@ -724,6 +730,7 @@
             this.CommanderSelector.Size = new System.Drawing.Size(222, 33);
             this.CommanderSelector.TabIndex = 394;
             this.CommanderSelector.Text = "CommanderImage1";
+            this.CommanderSelector.SelectedIndexChanged += new System.EventHandler(this.CommanderSelector_SelectedIndexChanged);
             // 
             // Player1Dead
             // 
@@ -828,6 +835,26 @@
             this.Player8Dead.TabIndex = 402;
             this.Player8Dead.Text = "DEAD";
             this.Player8Dead.Visible = false;
+            // 
+            // QRCode
+            // 
+            this.QRCode.Location = new System.Drawing.Point(1444, 618);
+            this.QRCode.Name = "QRCode";
+            this.QRCode.Size = new System.Drawing.Size(125, 125);
+            this.QRCode.TabIndex = 403;
+            this.QRCode.TabStop = false;
+            // 
+            // ResetPassword
+            // 
+            this.ResetPassword.CornerRadius = 30;
+            this.ResetPassword.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetPassword.Location = new System.Drawing.Point(1398, 513);
+            this.ResetPassword.Name = "ResetPassword";
+            this.ResetPassword.Size = new System.Drawing.Size(222, 45);
+            this.ResetPassword.TabIndex = 404;
+            this.ResetPassword.Text = "Reset Password";
+            this.ResetPassword.UseVisualStyleBackColor = true;
+            this.ResetPassword.Click += new System.EventHandler(this.ResetPassword_Click);
             // 
             // Treachery8Unveil
             // 
@@ -1818,9 +1845,9 @@
             // 
             this.StartTreachery.CornerRadius = 30;
             this.StartTreachery.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartTreachery.Location = new System.Drawing.Point(1398, 196);
+            this.StartTreachery.Location = new System.Drawing.Point(1398, 159);
             this.StartTreachery.Name = "StartTreachery";
-            this.StartTreachery.Size = new System.Drawing.Size(119, 45);
+            this.StartTreachery.Size = new System.Drawing.Size(222, 45);
             this.StartTreachery.TabIndex = 100;
             this.StartTreachery.Text = "Treachery";
             this.StartTreachery.UseVisualStyleBackColor = true;
@@ -1830,9 +1857,9 @@
             // 
             this.NewGame.CornerRadius = 30;
             this.NewGame.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewGame.Location = new System.Drawing.Point(1398, 151);
+            this.NewGame.Location = new System.Drawing.Point(1398, 114);
             this.NewGame.Name = "NewGame";
-            this.NewGame.Size = new System.Drawing.Size(119, 45);
+            this.NewGame.Size = new System.Drawing.Size(222, 45);
             this.NewGame.TabIndex = 99;
             this.NewGame.Text = "New Game";
             this.NewGame.UseVisualStyleBackColor = true;
@@ -1842,9 +1869,9 @@
             // 
             this.SetPlayersTo8.CornerRadius = 30;
             this.SetPlayersTo8.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo8.Location = new System.Drawing.Point(1398, 506);
+            this.SetPlayersTo8.Location = new System.Drawing.Point(1398, 469);
             this.SetPlayersTo8.Name = "SetPlayersTo8";
-            this.SetPlayersTo8.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo8.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo8.TabIndex = 96;
             this.SetPlayersTo8.Text = "8 Players";
             this.SetPlayersTo8.UseVisualStyleBackColor = true;
@@ -1854,9 +1881,9 @@
             // 
             this.SetPlayersTo7.CornerRadius = 30;
             this.SetPlayersTo7.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo7.Location = new System.Drawing.Point(1398, 462);
+            this.SetPlayersTo7.Location = new System.Drawing.Point(1398, 425);
             this.SetPlayersTo7.Name = "SetPlayersTo7";
-            this.SetPlayersTo7.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo7.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo7.TabIndex = 95;
             this.SetPlayersTo7.Text = "7 Players";
             this.SetPlayersTo7.UseVisualStyleBackColor = true;
@@ -1866,9 +1893,9 @@
             // 
             this.SetPlayersTo6.CornerRadius = 30;
             this.SetPlayersTo6.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo6.Location = new System.Drawing.Point(1398, 418);
+            this.SetPlayersTo6.Location = new System.Drawing.Point(1398, 381);
             this.SetPlayersTo6.Name = "SetPlayersTo6";
-            this.SetPlayersTo6.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo6.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo6.TabIndex = 94;
             this.SetPlayersTo6.Text = "6 Players";
             this.SetPlayersTo6.UseVisualStyleBackColor = true;
@@ -1878,9 +1905,9 @@
             // 
             this.SetPlayersTo2.CornerRadius = 30;
             this.SetPlayersTo2.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo2.Location = new System.Drawing.Point(1398, 241);
+            this.SetPlayersTo2.Location = new System.Drawing.Point(1398, 204);
             this.SetPlayersTo2.Name = "SetPlayersTo2";
-            this.SetPlayersTo2.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo2.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo2.TabIndex = 93;
             this.SetPlayersTo2.Text = "2 Players";
             this.SetPlayersTo2.UseVisualStyleBackColor = true;
@@ -1890,9 +1917,9 @@
             // 
             this.SetPlayersTo3.CornerRadius = 30;
             this.SetPlayersTo3.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo3.Location = new System.Drawing.Point(1398, 286);
+            this.SetPlayersTo3.Location = new System.Drawing.Point(1398, 249);
             this.SetPlayersTo3.Name = "SetPlayersTo3";
-            this.SetPlayersTo3.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo3.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo3.TabIndex = 92;
             this.SetPlayersTo3.Text = "3 Players";
             this.SetPlayersTo3.UseVisualStyleBackColor = true;
@@ -1902,9 +1929,9 @@
             // 
             this.SetPlayersTo4.CornerRadius = 30;
             this.SetPlayersTo4.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo4.Location = new System.Drawing.Point(1398, 330);
+            this.SetPlayersTo4.Location = new System.Drawing.Point(1398, 293);
             this.SetPlayersTo4.Name = "SetPlayersTo4";
-            this.SetPlayersTo4.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo4.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo4.TabIndex = 91;
             this.SetPlayersTo4.Text = "4 Players";
             this.SetPlayersTo4.UseVisualStyleBackColor = true;
@@ -1914,9 +1941,9 @@
             // 
             this.SetPlayersTo5.CornerRadius = 30;
             this.SetPlayersTo5.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo5.Location = new System.Drawing.Point(1398, 374);
+            this.SetPlayersTo5.Location = new System.Drawing.Point(1398, 337);
             this.SetPlayersTo5.Name = "SetPlayersTo5";
-            this.SetPlayersTo5.Size = new System.Drawing.Size(119, 45);
+            this.SetPlayersTo5.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo5.TabIndex = 90;
             this.SetPlayersTo5.Text = "5 Players";
             this.SetPlayersTo5.UseVisualStyleBackColor = true;
@@ -1970,17 +1997,25 @@
             this.Player1AOEDMG.UseVisualStyleBackColor = true;
             this.Player1AOEDMG.Click += new System.EventHandler(this.Player1AOEDMG_Click);
             // 
-            // FetchCommander1
+            // WifiConnect
             // 
-            this.FetchCommander1.CornerRadius = 30;
-            this.FetchCommander1.Font = new System.Drawing.Font("Arial Rounded MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FetchCommander1.Location = new System.Drawing.Point(1398, 110);
-            this.FetchCommander1.Name = "FetchCommander1";
-            this.FetchCommander1.Size = new System.Drawing.Size(119, 40);
-            this.FetchCommander1.TabIndex = 9;
-            this.FetchCommander1.Text = "Fetch";
-            this.FetchCommander1.UseVisualStyleBackColor = true;
-            this.FetchCommander1.Click += new System.EventHandler(this.FetchCommander_Click);
+            this.WifiConnect.Location = new System.Drawing.Point(1444, 618);
+            this.WifiConnect.Name = "WifiConnect";
+            this.WifiConnect.Size = new System.Drawing.Size(125, 125);
+            this.WifiConnect.TabIndex = 405;
+            this.WifiConnect.TabStop = false;
+            // 
+            // wificonnector
+            // 
+            this.wificonnector.CornerRadius = 30;
+            this.wificonnector.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wificonnector.Location = new System.Drawing.Point(1398, 557);
+            this.wificonnector.Name = "wificonnector";
+            this.wificonnector.Size = new System.Drawing.Size(222, 45);
+            this.wificonnector.TabIndex = 406;
+            this.wificonnector.Text = "Show Wifi";
+            this.wificonnector.UseVisualStyleBackColor = true;
+            this.wificonnector.Click += new System.EventHandler(this.wificonnector_Click);
             // 
             // Form1
             // 
@@ -1989,6 +2024,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.Controls.Add(this.wificonnector);
+            this.Controls.Add(this.WifiConnect);
+            this.Controls.Add(this.ResetPassword);
+            this.Controls.Add(this.QRCode);
             this.Controls.Add(this.Player8Dead);
             this.Controls.Add(this.Player7Dead);
             this.Controls.Add(this.Player6Dead);
@@ -2127,7 +2166,6 @@
             this.Controls.Add(this.Player1);
             this.Controls.Add(this.Player1AOEDMG);
             this.Controls.Add(this.CommandComboBox1);
-            this.Controls.Add(this.FetchCommander1);
             this.Controls.Add(this.Commander1);
             this.Controls.Add(this.CommanderImage1);
             this.DoubleBuffered = true;
@@ -2159,6 +2197,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CommanderImage7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WifiConnect)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2167,8 +2207,6 @@
         #endregion
         //private System.Windows.Forms.Button Player1Plus5;
 
-
-        private RoundButton FetchCommander1;
         private RoundButton Player1AOEDMG;
 
 
@@ -2312,6 +2350,10 @@
         private System.Windows.Forms.Label Player6Dead;
         private System.Windows.Forms.Label Player7Dead;
         private System.Windows.Forms.Label Player8Dead;
+        private System.Windows.Forms.PictureBox QRCode;
+        private RoundButton ResetPassword;
+        private System.Windows.Forms.PictureBox WifiConnect;
+        private RoundButton wificonnector;
         //private RoundedButton FetchCommander1;
 
     }

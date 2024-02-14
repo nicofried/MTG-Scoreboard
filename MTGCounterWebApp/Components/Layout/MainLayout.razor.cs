@@ -36,7 +36,7 @@ namespace MTGCounter.Components.Layout
         protected override void OnInitialized()
         {
             base.OnInitialized();
-            Console.WriteLine($"Amount of players: {Amountofplayers}");
+            //Console.WriteLine($"Amount of players: {Amountofplayers}");
         }
 
         protected override void OnParametersSet()

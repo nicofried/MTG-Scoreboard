@@ -49,8 +49,8 @@ namespace MTGCounter.Components.Pages
             TreacheryImagePath = "images/Treachery/" + Form1.Instance.Treachery4ImagePath;
             TreacheryRuleText = Form1.Instance.TreacheryRule4Path;
 
-            Console.WriteLine($"Full Image Path: {TreacheryImagePath}");
-            Console.WriteLine($"Rule Text: {TreacheryRuleText}");
+            //Console.WriteLine($"Full Image Path: {TreacheryImagePath}");
+            //Console.WriteLine($"Rule Text: {TreacheryRuleText}");
         }
         public string PasswordP4 { get; set; } = Form1.Instance.ReturnP4Password;
 
@@ -70,18 +70,25 @@ namespace MTGCounter.Components.Pages
 
         private string newPassword; // Add this line to store the new password
 
+        private bool passwordHasBeenSet = false; // Add this flag
+
+        private bool MustChangePassword => isAuthenticated && PasswordP4 == "1234" && !passwordHasBeenSet;
+
+
         private void SetNewPassword()
         {
-            if (!string.IsNullOrWhiteSpace(newPassword))
+            if (!string.IsNullOrWhiteSpace(newPassword) && newPassword != "1234")
             {
                 PasswordP4 = newPassword; // Update the local password
                 Form1.Instance.ReturnP4Password = newPassword; // Update the password in Form1.Instance
                 newPassword = string.Empty; // Optionally clear the input field
+                passwordHasBeenSet = true; // Indicate that the password has been set
                 JSRuntime.InvokeVoidAsync("alert", "Password updated successfully!");
+                StateHasChanged(); // Refresh UI to reflect the change
             }
             else
             {
-                JSRuntime.InvokeVoidAsync("alert", "New password cannot be empty!");
+                JSRuntime.InvokeVoidAsync("alert", "New password cannot be empty or the default password!");
             }
         }
     }

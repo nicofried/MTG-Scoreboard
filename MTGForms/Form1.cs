@@ -14,6 +14,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Diagnostics;
+using QRCoder;
+using System.Drawing.Imaging;
+using System.Net.Sockets;
+using System.Net;
+using static QRCoder.PayloadGenerator;
 
 
 namespace SE_MTG
@@ -35,10 +40,10 @@ namespace SE_MTG
 
 
         {
-            Color.Blue, // Player 1
+            Color.LightBlue, // Player 1
             Color.Red, // Player 2
             Color.Turquoise, // Player 3
-            Color.Yellow, // Player 4
+            Color.Green, // Player 4
             Color.Orange, // Player 5
             Color.Purple, // Player 6
             Color.Brown, // Player 7
@@ -47,6 +52,9 @@ namespace SE_MTG
         private Form rulesForm = null; // Declare a class-level variable to track the rules form
         private WebSocketServer webSocketServer;
         private static Form1 instance;
+        private string wifi = "Schneider Tosi Wifi";
+        private string wifipass = "Syst3m22_";
+
 
         public static Form1 Instance
         {
@@ -55,6 +63,52 @@ namespace SE_MTG
                 return instance;
             }
         }
+
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
+
+        public static string GetExternalIPAddress()
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                string externalIP = webClient.DownloadString("http://icanhazip.com").Trim();
+                return externalIP;
+            }
+        }
+
+
+
+        public Bitmap GenerateQrCode(string url)
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20);
+            return qrCodeImage;
+        }
+
+        private void DisplayQRCode()
+        {
+            // Assuming you want to use the machine's IP and port 5001, you might have to resolve the IP dynamically.
+            // For simplicity, we'll use a placeholder. Replace "YourCurrentIP" with your actual IP or hostname.
+            string localIP = GetLocalIPAddress();
+            string url = $"https://{localIP}:5001";
+            Bitmap qrCodeImage = GenerateQrCode(url);
+            QRCode.Image = qrCodeImage; // Assuming QRCode is your PictureBox's name
+            QRCode.SizeMode = PictureBoxSizeMode.StretchImage;
+
+        }
+
 
 
 
@@ -68,28 +122,17 @@ namespace SE_MTG
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Stop the WebSocket server when the form is closing
-            StopWebSocketServer();
+            //StopWebSocketServer();
         }
-        private void StartWebSocketServer()
-        {
-            webSocketServer = new WebSocketServer("localhost", 8091); // Adjust hostname and port as needed
-            webSocketServer.Start();
-        }
-        private void StopWebSocketServer()
-        {
-            if (webSocketServer != null)
-            {
-                webSocketServer.Stop();
-                webSocketServer = null;
-            }
-        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             // Initialize your UI elements here
             InitializeImagePopupForm();
             InitializeCommandComboBox1();
+            DisplayQRCode(); // Display the QR code
 
-            StartWebSocketServer();
+            //StartWebSocketServer();
 
             for (int i = 1; i <= 8; i++)
             {
@@ -98,17 +141,12 @@ namespace SE_MTG
             // After populating the CommanderSelector ComboBox
             CommanderSelector.SelectedIndex = CommanderSelector.Items.IndexOf("CommanderImage1");
 
-            passwordP1 = "1234";
-            passwordP2 = "1234";
-            passwordP3 = "1234";
-            passwordP4 = "1234";
-            passwordP5 = "1234";
-            passwordP6 = "1234";
-            passwordP7 = "1234";
-            passwordP8 = "1234";
 
             InitializeNewGame();
+            ResetPasswords();
 
+
+            GenerateWifiQRCode(wifi, wifipass);
 
             // Initialize player text boxes and progress bars
             InitializePlayerTextBoxes();
@@ -131,11 +169,11 @@ namespace SE_MTG
                 {
                     if (playerCommanderDmgBars[i, j] != null)
                     {
-                        Console.WriteLine($"Bar for player {i + 1} vs opponent {j + 1} is set.");
+                        //Console.WriteLine($"Bar for player {i + 1} vs opponent {j + 1} is set.");
                     }
                     else
                     {
-                        Console.WriteLine($"Bar for player {i + 1} vs opponent {j + 1} is NOT set.");
+                        //Console.WriteLine($"Bar for player {i + 1} vs opponent {j + 1} is NOT set.");
                     }
                 }
             }
@@ -145,6 +183,14 @@ namespace SE_MTG
                 InitializePoisonDmgBar(player);
             }
 
+            TreacheryImage1 = "Treachery1.jpg";
+            TreacheryImage2 = "Treachery1.jpg";
+            TreacheryImage3 = "Treachery1.jpg";
+            TreacheryImage4 = "Treachery1.jpg";
+            TreacheryImage5 = "Treachery1.jpg";
+            TreacheryImage6 = "Treachery1.jpg";
+            TreacheryImage7 = "Treachery1.jpg";
+            TreacheryImage8 = "Treachery1.jpg";
 
         }
 
@@ -178,11 +224,11 @@ namespace SE_MTG
                 poisonBar.BarType = CustomProgressBar.ProgressBarType.Poison;
 
                 playerPoisonDmgBars[player - 1] = poisonBar;
-                Console.WriteLine($"Initialized {progressBarName} and stored in array.");
+                //Console.WriteLine($"Initialized {progressBarName} and stored in array.");
             }
             else
             {
-                Console.WriteLine($"Poison damage bar '{progressBarName}' not found. Initialization skipped.");
+                //Console.WriteLine($"Poison damage bar '{progressBarName}' not found. Initialization skipped.");
             }
         }
         private void InitializeCommanderDmgBar(int player, int opponent)
@@ -205,11 +251,11 @@ namespace SE_MTG
                 dmgBar.PlayerName = $"Player {opponent}";
 
                 playerCommanderDmgBars[player - 1, opponent - 1] = dmgBar;
-                Console.WriteLine($"Initialized {progressBarName} and stored in array.");
+                //Console.WriteLine($"Initialized {progressBarName} and stored in array.");
             }
             else
             {
-                Console.WriteLine($"Progress bar '{progressBarName}' not found. Initialization skipped.");
+                //Console.WriteLine($"Progress bar '{progressBarName}' not found. Initialization skipped.");
             }
         }
         private void InitializeCommandComboBox1()
@@ -251,6 +297,28 @@ namespace SE_MTG
         }
 
 
+        public void GenerateWifiQRCode(string ssid, string password)
+        {
+            // Format the Wi-Fi network details according to the Wi-Fi QR Code standard
+            string wifiFormat = $"WIFI:S:{ssid};T:WPA;P:{password};;";
+
+            // Create a new instance of the QRCodeGenerator class
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(wifiFormat, QRCodeGenerator.ECCLevel.Q);
+
+            // Create a QR code as a bitmap
+            using (QRCode qrCode = new QRCode(qrCodeData))
+            {
+                Bitmap qrCodeImage = qrCode.GetGraphic(20);
+
+                // Assuming 'WifiConnect' is a PictureBox control in your Windows Forms application
+                // Convert the Bitmap to an Image and display it in the PictureBox
+                WifiConnect.Image = qrCodeImage;
+                WifiConnect.SizeMode = PictureBoxSizeMode.StretchImage;
+                WifiConnect.Visible = false;
+            }
+        }
+
         //Generic Functions
         private void PoisonDmgBar_MouseClick(object sender, MouseEventArgs e)
         {
@@ -269,9 +337,10 @@ namespace SE_MTG
                         if (clickedBar.Value < clickedBar.Maximum)
                         {
                             clickedBar.Value += 1;
-                            if (playerHpControl.Value > playerHpControl.Minimum) // Check to avoid going below minimum
+                            //if (playerHpControl.Value > playerHpControl.Minimum) // Check to avoid going below minimum
+                            if (clickedBar.Value == 10)
                             {
-                                playerHpControl.Value -= 1; // Decrease HP by 1
+                                playerHpControl.Value = 0; // Decrease HP by 1
                             }
                         }
                     }
@@ -280,19 +349,19 @@ namespace SE_MTG
                         clickedBar.Value -= 1;
                         if (playerHpControl.Value < playerHpControl.Maximum) // Check to avoid going above maximum
                         {
-                            playerHpControl.Value += 1; // Increase HP by 1
+                            //playerHpControl.Value += 1; // Increase HP by 1
                         }
                     }
                     clickedBar.Invalidate(); // Request the progress bar to repaint
                 }
                 else
                 {
-                    Console.WriteLine($"HP control for player {playerIndex + 1} not found.");
+                    //Console.WriteLine($"HP control for player {playerIndex + 1} not found.");
                 }
             }
             else
             {
-                Console.WriteLine("Clicked poison progress bar not found in the array.");
+                //Console.WriteLine("Clicked poison progress bar not found in the array.");
             }
         }
         private void UpdateRelatedProgressBarNames(int player, string newName)
@@ -315,28 +384,35 @@ namespace SE_MTG
             CustomProgressBar clickedBar = sender as CustomProgressBar;
             if (clickedBar == null)
             {
-                Console.WriteLine("Clicked bar is null.");
+                //Console.WriteLine("Clicked bar is null.");
                 return;
             }
 
-            Console.WriteLine($"Clicked bar name: {clickedBar.Name}, Value: {clickedBar.Value}");
+            //Console.WriteLine($"Clicked bar name: {clickedBar.Name}, Value: {clickedBar.Value}");
 
             int playerTakingDamage = ParsePlayerTakingDamageFromBarName(clickedBar.Name);
-            Console.WriteLine($"Player taking damage: {playerTakingDamage}");
+            //Console.WriteLine($"Player taking damage: {playerTakingDamage}");
 
             // Adjust to find a NumericUpDown control instead of a ProgressBar
             NumericUpDown hpBar = this.Controls.Find($"Player{playerTakingDamage}HP", true).FirstOrDefault() as NumericUpDown;
 
             if (hpBar != null)
             {
-                Console.WriteLine($"HP NumericUpDown found: {hpBar.Name}, Current HP: {hpBar.Value}");
+                //Console.WriteLine($"HP NumericUpDown found: {hpBar.Name}, Current HP: {hpBar.Value}");
 
                 if (e.Button == MouseButtons.Left)
                 {
                     if (clickedBar.Value < clickedBar.Maximum)
                     {
-                        clickedBar.Value += 1; // Increment the progress bar value
+
+                            clickedBar.Value += 1; // Increment the progress bar value
                         hpBar.Value = Math.Max(hpBar.Minimum, hpBar.Value - 1); // Decrement HP, ensuring it doesn't go below the minimum
+                    
+                    }
+
+                    if (clickedBar.Value == 21)
+                    {
+                        hpBar.Value = 0;
                     }
                 }
                 else if (e.Button == MouseButtons.Right && clickedBar.Value > 0)
@@ -349,7 +425,7 @@ namespace SE_MTG
             }
             else
             {
-                Console.WriteLine($"HP NumericUpDown for player {playerTakingDamage} not found.");
+                //Console.WriteLine($"HP NumericUpDown for player {playerTakingDamage} not found.");
             }
         }
         private int ParsePlayerTakingDamageFromBarName(string barName)
@@ -361,7 +437,7 @@ namespace SE_MTG
             }
             else
             {
-                Console.WriteLine($"Failed to parse player number from {barName}");
+                //Console.WriteLine($"Failed to parse player number from {barName}");
                 throw new InvalidOperationException("Progress bar name is not in the correct format.");
             }
         }
@@ -2817,7 +2893,7 @@ namespace SE_MTG
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Failed to load image from {cardPath}. Error: {ex.Message}");
+                           // Console.WriteLine($"Failed to load image from {cardPath}. Error: {ex.Message}");
                         }
 
                         // Retrieve data for the current player
@@ -2907,7 +2983,7 @@ namespace SE_MTG
                 }
                 else
                 {
-                    Console.WriteLine("No available roles.");
+                    //Console.WriteLine("No available roles.");
                 }
             }
             RefreshTreacheryImages();
@@ -3118,7 +3194,11 @@ namespace SE_MTG
 
 
         //Webservice functions
-        public string Player1Name { get { return Player1.Text; } } // Expose Player1 name
+        public string Player1Name
+        {
+            get { return Player1.Text; }
+            set { Player1.Text = value; } // Add this setter
+        }// Expose Player1 name
         public string Player2Name { get { return Player2.Text; } } // Expose Player name
         public string Player3Name { get { return Player3.Text; } } // Expose Player name
         public string Player4Name { get { return Player4.Text; } } // Expose Player name
@@ -3216,6 +3296,100 @@ namespace SE_MTG
 
         public static string TreacheryImage1, TreacheryImage2, TreacheryImage3, TreacheryImage4,
                              TreacheryImage5, TreacheryImage6, TreacheryImage7, TreacheryImage8;
+
+        private async void Commander1_TextChanged(object sender, EventArgs e)
+        {
+            // Assuming CommanderSelector is your ComboBox name
+            var selectedCommander = CommanderSelector.SelectedItem.ToString();
+
+            // Assuming the naming convention is "CommanderImageX" where X is the player number
+            PictureBox correspondingPictureBox = this.Controls.Find(selectedCommander, true).FirstOrDefault() as PictureBox;
+
+            // Fetch the name from the corresponding TextBox. Since there's only one TextBox named "Commander1", we can hardcode it.
+            TextBox correspondingTextBox = this.Controls.Find("Commander1", true).FirstOrDefault() as TextBox;
+
+            if (correspondingTextBox != null && correspondingPictureBox != null)
+            {
+                string cardName = correspondingTextBox.Text.Trim();
+                if (!string.IsNullOrWhiteSpace(cardName))
+                {
+                    try
+                    {
+                        await FetchAndDisplayCardImage(cardName, correspondingPictureBox); // Call the new method
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a card name.");
+                }
+            }
+        }
+
+        private void wificonnector_Click(object sender, EventArgs e)
+        {
+            // Check the current text of the button to determine the action
+            if (wificonnector.Text == "Show Wifi")
+            {
+                // Change the button text to "Treachery Page"
+                wificonnector.Text = "Treachery Page";
+
+                // Set visibility: Hide QRCode, Show WifiConnect
+                QRCode.Visible = false;
+                WifiConnect.Visible = true;
+            }
+            else if (wificonnector.Text == "Treachery Page")
+            {
+                // Change the button text to "Wifi Connect"
+                wificonnector.Text = "Show Wifi";
+
+                // Set visibility: Show QRCode, Hide WifiConnect
+                QRCode.Visible = true;
+                WifiConnect.Visible = false;
+            }
+        }
+
+
+        private void ResetPassword_Click(object sender, EventArgs e)
+        {
+            ResetPasswords();
+        }
+
+        private void ResetPasswords()
+        {
+            passwordP1 = "1234";
+            passwordP2 = "1234";
+            passwordP3 = "1234";
+            passwordP4 = "1234";
+            passwordP5 = "1234";
+            passwordP6 = "1234";
+            passwordP7 = "1234";
+            passwordP8 = "1234";
+
+        }
+
+        private void CommanderSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Check if any item is selected in CommanderSelector
+            if (CommanderSelector.SelectedItem != null)
+            {
+                // Get the selected card name from the combobox
+                string selectedCardName = CommandComboBox1.SelectedItem as string;
+
+                // Get the corresponding PictureBox based on the selected item in CommanderSelector
+                string pictureBoxName = CommanderSelector.SelectedItem.ToString().Replace("CommanderImage", "CommanderImage");
+                PictureBox selectedPictureBox = this.Controls.Find(pictureBoxName, true).FirstOrDefault() as PictureBox;
+
+                // Update the corresponding PictureBox with the selected card image
+                if (selectedPictureBox != null && !string.IsNullOrWhiteSpace(selectedCardName))
+                {
+                    _ = FetchAndDisplayCardImage(selectedCardName, selectedPictureBox); // Suppress the warning
+                }
+            }
+        }
 
 
 

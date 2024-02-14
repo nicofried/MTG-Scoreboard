@@ -20,11 +20,11 @@ namespace SE_MTG
             httpListener.Prefixes.Add($"http://{hostname}:{port}/");
         }
 
-        public void Start()
-        {
-            httpListener.Start();
-            Task.Run(ListenForClients);
-        }
+        //public void Start()
+        //{
+        //    httpListener.Start();
+        //    Task.Run(ListenForClients);
+        //}
 
         public void Stop()
         {
@@ -57,7 +57,7 @@ namespace SE_MTG
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error handling WebSocket request: " + ex.Message);
+                //Console.WriteLine("Error handling WebSocket request: " + ex.Message);
             }
         }
 
@@ -85,7 +85,7 @@ namespace SE_MTG
                     using (var reader = new StreamReader(completeMessage, Encoding.UTF8))
                     {
                         var messageString = reader.ReadToEnd();
-                        Console.WriteLine($"Received message: {messageString}"); // Log the raw message content
+                        //Console.WriteLine($"Received message: {messageString}"); // Log the raw message content
 
                         // Now you can handle the full message stored in messageString
                         if (receiveResult.MessageType == WebSocketMessageType.Text)
@@ -106,7 +106,7 @@ namespace SE_MTG
                                 }
 
                                 await SendMessageToWebSocket(webSocket, "ToggleTreacheryUnveil1");
-                                Console.WriteLine("Handled TreacheryUnveil1 command.");
+                                //Console.WriteLine("Handled TreacheryUnveil1 command.");
                             }
                             else if (messageString == "GetNumberOfPlayers")
                             {
@@ -115,7 +115,7 @@ namespace SE_MTG
                                 if (Form1.Instance != null)
                                 {
                                     numberOfPlayers = Form1.Instance.selectedPlayers; // Use correct property name
-                                    Console.WriteLine("Number of players: " + numberOfPlayers);
+                                    //Console.WriteLine("Number of players: " + numberOfPlayers);
                                 }
                                 await SendMessageToWebSocket(webSocket, numberOfPlayers.ToString());
                             }
@@ -134,7 +134,7 @@ namespace SE_MTG
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error processing WebSocket request: " + ex.Message);
+               // Console.WriteLine("Error processing WebSocket request: " + ex.Message);
             }
             finally
             {

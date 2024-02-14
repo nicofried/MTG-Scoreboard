@@ -13,7 +13,7 @@ namespace MTGCounter.Components.Pages
 {
     public partial class Player1
     {
-        public string Playername { get; set; } = Form1.Instance.Player1Name;
+        public string Playername1 { get; set; } = Form1.Instance.Player1Name;
         private string inputPassword;
         private bool isAuthenticated = false;
 
@@ -49,8 +49,8 @@ namespace MTGCounter.Components.Pages
             TreacheryImagePath = "images/Treachery/" + Form1.Instance.Treachery1ImagePath;
             TreacheryRuleText = Form1.Instance.TreacheryRule1Path;
 
-            Console.WriteLine($"Full Image Path: {TreacheryImagePath}");
-            Console.WriteLine($"Rule Text: {TreacheryRuleText}");
+            //Console.WriteLine($"Full Image Path: {TreacheryImagePath}");
+            //Console.WriteLine($"Rule Text: {TreacheryRuleText}");
         }
         public string PasswordP1 { get; set; } = Form1.Instance.ReturnP1Password;
 
@@ -70,18 +70,31 @@ namespace MTGCounter.Components.Pages
 
         private string newPassword; // Add this line to store the new password
 
+        private bool passwordHasBeenSet = false; // Add this flag
+
+        private bool MustChangePassword => isAuthenticated && PasswordP1 == "1234" && !passwordHasBeenSet;
+
+        
+
+        private void SetPlayerName()
+        {
+                Form1.Instance.Player1Name = Playername1; // Update the password in Form1.Instance
+                StateHasChanged(); // Refresh UI to reflect the change
+        }
         private void SetNewPassword()
         {
-            if (!string.IsNullOrWhiteSpace(newPassword))
+            if (!string.IsNullOrWhiteSpace(newPassword) && newPassword != "1234")
             {
                 PasswordP1 = newPassword; // Update the local password
                 Form1.Instance.ReturnP1Password = newPassword; // Update the password in Form1.Instance
                 newPassword = string.Empty; // Optionally clear the input field
+                passwordHasBeenSet = true; // Indicate that the password has been set
                 JSRuntime.InvokeVoidAsync("alert", "Password updated successfully!");
+                StateHasChanged(); // Refresh UI to reflect the change
             }
             else
             {
-                JSRuntime.InvokeVoidAsync("alert", "New password cannot be empty!");
+                JSRuntime.InvokeVoidAsync("alert", "New password cannot be empty or the default password!");
             }
         }
     }
