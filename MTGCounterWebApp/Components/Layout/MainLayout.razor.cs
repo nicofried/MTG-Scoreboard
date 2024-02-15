@@ -10,11 +10,15 @@ using Microsoft.JSInterop;
 using Radzen;
 using Radzen.Blazor;
 using SE_MTG;
+using System.Threading;
 
 namespace MTGCounter.Components.Layout
 {
-    public partial class MainLayout
+    public partial class MainLayout : IDisposable
     {
+        private System.Threading.Timer? _timer;
+        private const int PollingInterval = 1000; // Adjusted to 1 second
+
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
 
@@ -36,6 +40,9 @@ namespace MTGCounter.Components.Layout
         protected override void OnInitialized()
         {
             base.OnInitialized();
+            _timer?.Dispose(); // Ensure no timer is running before creating a new one
+            _timer = new System.Threading.Timer(Callback, null, 0, PollingInterval);
+            sidebarExpanded = false;
             //Console.WriteLine($"Amount of players: {Amountofplayers}");
         }
 
@@ -75,6 +82,30 @@ namespace MTGCounter.Components.Layout
             }
         }
 
+
+        private void Callback(object? state)
+        {
+            InvokeAsync(() =>
+            {
+                // Fetch updated data from your forms
+                Amountofplayers = Form1.Instance.AmountofPlayers;
+                Playername1 = Form1.Instance.Player1Name;
+                Playername2 = Form1.Instance.Player2Name;
+                Playername3 = Form1.Instance.Player3Name;
+                Playername4 = Form1.Instance.Player4Name;
+                Playername5 = Form1.Instance.Player5Name;
+                Playername6 = Form1.Instance.Player6Name;
+                Playername7 = Form1.Instance.Player7Name;
+                Playername8 = Form1.Instance.Player8Name;
+
+                StateHasChanged(); // Request the UI to refresh
+            });
+        }
+
+        public void Dispose()
+        {
+            _timer?.Dispose();
+        }
         void SidebarToggleClick()
         {
             sidebarExpanded = !sidebarExpanded;

@@ -93,9 +93,10 @@ namespace SE_MTG
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(url, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
-            Bitmap qrCodeImage = qrCode.GetGraphic(20);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20, Color.SteelBlue, Color.LightGray, true);
             return qrCodeImage;
         }
+
 
         private void DisplayQRCode()
         {
@@ -309,7 +310,7 @@ namespace SE_MTG
             // Create a QR code as a bitmap
             using (QRCode qrCode = new QRCode(qrCodeData))
             {
-                Bitmap qrCodeImage = qrCode.GetGraphic(20);
+                Bitmap qrCodeImage = qrCode.GetGraphic(20, Color.SteelBlue,Color.LightGray,true);
 
                 // Assuming 'WifiConnect' is a PictureBox control in your Windows Forms application
                 // Convert the Bitmap to an Image and display it in the PictureBox
@@ -886,7 +887,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -935,7 +936,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -984,7 +985,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1033,7 +1034,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1082,7 +1083,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1131,7 +1132,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1180,7 +1181,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1229,7 +1230,7 @@ namespace SE_MTG
                     }
                     else
                     {
-                        MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("No rules available for this commander.", "Commander Rule", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
@@ -1619,8 +1620,6 @@ namespace SE_MTG
                 }
             }
         }
-
-
 
         //AOEDamage Functions
         private void Player1AOEDMG_Click(object sender, EventArgs e)
@@ -2760,16 +2759,112 @@ namespace SE_MTG
         //Role Text Change (Not in use)
         private void RolePlayer1_TextChanged(object sender, EventArgs e)
         {
-
+            if(RolePlayer1.Text == "Leader")
+            {
+                RolePlayer1.Visible = true;
+                Treachery1.Visible = true;
+            }
+            else
+            {
+                RolePlayer1.Visible = false;
+                Treachery1.Visible = false;
+            }
         }
         private void RolePlayer2_TextChanged(object sender, EventArgs e)
         {
-
+            if (RolePlayer2.Text == "Leader")
+            {
+                RolePlayer2.Visible = true;
+                Treachery2.Visible = true;
+            }
+            else
+            {
+                RolePlayer2.Visible = false;
+                Treachery2.Visible = false;
+            }
         }
         private void RolePlayer3_TextChanged(object sender, EventArgs e)
         {
-
+            if (RolePlayer3.Text == "Leader")
+            {
+                RolePlayer3.Visible = true;
+                Treachery3.Visible = true;
+            }
+            else
+            {
+                RolePlayer3.Visible = false;
+                Treachery3.Visible = false;
+            }
         }
+
+        private void RolePlayer4_TextChanged(object sender, EventArgs e)
+        {
+            if (RolePlayer4.Text == "Leader")
+            {
+                RolePlayer4.Visible = true;
+                Treachery4.Visible = true;
+            }
+            else
+            {
+                RolePlayer4.Visible = false;
+                Treachery4.Visible = false;
+            }
+        }
+        private void RolePlayer5_TextChanged(object sender, EventArgs e)
+        {
+            if (RolePlayer5.Text == "Leader")
+            {
+                RolePlayer5.Visible = true;
+                Treachery5.Visible = true;
+            }
+            else
+            {
+                RolePlayer5.Visible = false;
+                Treachery5.Visible = false;
+            }
+        }
+        private void RolePlayer6_TextChanged(object sender, EventArgs e)
+        {
+            if (RolePlayer6.Text == "Leader")
+            {
+                RolePlayer6.Visible = true;
+                Treachery6.Visible = true;
+            }
+            else
+            {
+                RolePlayer6.Visible = false;
+                Treachery6.Visible = false;
+            }
+        }
+
+        private void RolePlayer7_TextChanged(object sender, EventArgs e)
+        {
+            if (RolePlayer7.Text == "Leader")
+            {
+                RolePlayer7.Visible = true;
+                Treachery7.Visible = true;
+            }
+            else
+            {
+                RolePlayer7.Visible = false;
+                Treachery7.Visible = false;
+            }
+        }
+
+        private void RolePlayer8_TextChanged(object sender, EventArgs e)
+        {
+            if (RolePlayer8.Text == "Leader")
+            {
+                RolePlayer8.Visible = true;
+                Treachery8.Visible = true;
+            }
+            else
+            {
+                RolePlayer8.Visible = false;
+                Treachery8.Visible = false;
+            }
+        }
+
 
         //Start TreacheryGame
         private void RefreshTreacheryImages()
@@ -3197,15 +3292,125 @@ namespace SE_MTG
         public string Player1Name
         {
             get { return Player1.Text; }
-            set { Player1.Text = value; } // Add this setter
-        }// Expose Player1 name
-        public string Player2Name { get { return Player2.Text; } } // Expose Player name
-        public string Player3Name { get { return Player3.Text; } } // Expose Player name
-        public string Player4Name { get { return Player4.Text; } } // Expose Player name
-        public string Player5Name { get { return Player5.Text; } } // Expose Player name
-        public string Player6Name { get { return Player6.Text; } } // Expose Player name
-        public string Player7Name { get { return Player7.Text; } } // Expose Player name
-        public string Player8Name { get { return Player8.Text; } } // Expose Player name
+            set
+            {
+                if (Player1.InvokeRequired)
+                {
+                    Player1.BeginInvoke(new Action(() => Player1.Text = value));
+                }
+                else
+                {
+                    Player1.Text = value;
+                }
+            }
+        }// Expose name
+
+        public string Player2Name
+        {
+            get { return Player2.Text; }
+            set
+            {
+                if (Player2.InvokeRequired)
+                {
+                    Player2.BeginInvoke(new Action(() => Player2.Text = value));
+                }
+                else
+                {
+                    Player2.Text = value;
+                }
+            }
+        }// Expose name
+
+        public string Player3Name
+        {
+            get { return Player3.Text; }
+            set
+            {
+                if (Player3.InvokeRequired)
+                {
+                    Player3.BeginInvoke(new Action(() => Player3.Text = value));
+                }
+                else
+                {
+                    Player3.Text = value;
+                }
+            }
+        }// Expose name
+        public string Player4Name
+        {
+            get { return Player4.Text; }
+            set
+            {
+                if (Player4.InvokeRequired)
+                {
+                    Player4.BeginInvoke(new Action(() => Player4.Text = value));
+                }
+                else
+                {
+                    Player4.Text = value;
+                }
+            }
+        }// Expose name
+        public string Player5Name
+        {
+            get { return Player5.Text; }
+            set
+            {
+                if (Player5.InvokeRequired)
+                {
+                    Player5.BeginInvoke(new Action(() => Player5.Text = value));
+                }
+                else
+                {
+                    Player5.Text = value;
+                }
+            }
+        }// Expose name
+        public string Player6Name
+        {
+            get { return Player6.Text; }
+            set
+            {
+                if (Player6.InvokeRequired)
+                {
+                    Player6.BeginInvoke(new Action(() => Player6.Text = value));
+                }
+                else
+                {
+                    Player6.Text = value;
+                }
+            }
+        }// Expose name
+        public string Player7Name
+        {
+            get { return Player7.Text; }
+            set
+            {
+                if (Player7.InvokeRequired)
+                {
+                    Player7.BeginInvoke(new Action(() => Player7.Text = value));
+                }
+                else
+                {
+                    Player7.Text = value;
+                }
+            }
+        }// Expose name
+        public string Player8Name
+        {
+            get { return Player8.Text; }
+            set
+            {
+                if (Player8.InvokeRequired)
+                {
+                    Player8.BeginInvoke(new Action(() => Player8.Text = value));
+                }
+                else
+                {
+                    Player8.Text = value;
+                }
+            }
+        }// Expose name
         public string Treachery1ImagePath { get { return TreacheryImage1; } } // Expose Treachery1 image path
         public string Treachery2ImagePath { get { return TreacheryImage2; } } // Expose Treachery2 image path
         public string Treachery3ImagePath { get { return TreacheryImage3; } } // Expose Treachery3 image path
@@ -3232,7 +3437,7 @@ namespace SE_MTG
             get { return passwordP1; }
             set { passwordP1 = value; } // Add this setter
         }
-
+        
         public string ReturnP2Password
         {
             get { return passwordP2; }
@@ -3280,6 +3485,136 @@ namespace SE_MTG
         public static string passwordP6 { get; set; }
         public static string passwordP7 { get; set; }
         public static string passwordP8 { get; set; }
+
+        public int returnPlayer1HP
+        {
+            get { return (int)Player1HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player1HP.InvokeRequired)
+                {
+                    Player1HP.BeginInvoke(new Action(() => Player1HP.Value = value));
+                }
+                else
+                {
+                    Player1HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer2HP
+        {
+            get { return (int)Player2HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player2HP.InvokeRequired)
+                {
+                    Player2HP.BeginInvoke(new Action(() => Player2HP.Value = value));
+                }
+                else
+                {
+                    Player2HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer3HP
+        {
+            get { return (int)Player3HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player3HP.InvokeRequired)
+                {
+                    Player3HP.BeginInvoke(new Action(() => Player3HP.Value = value));
+                }
+                else
+                {
+                    Player3HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer4HP
+        {
+            get { return (int)Player4HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player4HP.InvokeRequired)
+                {
+                    Player4HP.BeginInvoke(new Action(() => Player4HP.Value = value));
+                }
+                else
+                {
+                    Player4HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer5HP
+        {
+            get { return (int)Player5HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player5HP.InvokeRequired)
+                {
+                    Player5HP.BeginInvoke(new Action(() => Player5HP.Value = value));
+                }
+                else
+                {
+                    Player5HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer6HP
+        {
+            get { return (int)Player6HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player6HP.InvokeRequired)
+                {
+                    Player6HP.BeginInvoke(new Action(() => Player6HP.Value = value));
+                }
+                else
+                {
+                    Player6HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer7HP
+        {
+            get { return (int)Player7HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player7HP.InvokeRequired)
+                {
+                    Player7HP.BeginInvoke(new Action(() => Player7HP.Value = value));
+                }
+                else
+                {
+                    Player7HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+        public int returnPlayer8HP
+        {
+            get { return (int)Player8HP.Value; } // Explicitly cast decimal to int
+            set
+            {
+                if (Player8HP.InvokeRequired)
+                {
+                    Player8HP.BeginInvoke(new Action(() => Player8HP.Value = value));
+                }
+                else
+                {
+                    Player8HP.Value = value;
+                }
+            } // No cast needed here since an implicit conversion from int to decimal is allowed
+        }
+
+
 
         public int AmountofPlayers { get { return selectedPlayers; } }
 
@@ -3352,6 +3687,15 @@ namespace SE_MTG
             }
         }
 
+        private void Player1Dead_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void ResetPassword_Click(object sender, EventArgs e)
         {

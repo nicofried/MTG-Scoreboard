@@ -25,11 +25,14 @@
         <RadzenStack AlignItems="Radzen.AlignItems.Center" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding); border-bottom: var(--rz-panel-menu-item-border);">
             <RadzenText Text="Treachery" TextStyle="Radzen.Blazor.TextStyle.Subtitle1" class="rz-mb-0" style="color: var(--rz-sidebar-color);" />
         </RadzenStack>
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Scoreboard" Path="@($"hovedside")" Click="@SidebarToggleClick" />
+        </RadzenPanelMenu>
         @for (int i = 1; i <= Amountofplayers; i++)
         {
             int localIndex = i;
             <RadzenPanelMenu>
-                <RadzenPanelMenuItem Text="@GetPlayerName(localIndex)" Path="@($"player{localIndex}")" />
+                <RadzenPanelMenuItem Text="@GetPlayerName(localIndex)" Path="@($"player{localIndex}")" Click="@SidebarToggleClick"/>
             </RadzenPanelMenu>
         }
         <RadzenStack AlignItems="Radzen.AlignItems.Center" Gap="0" class="rz-py-4 rz-py-lg-6" Style="padding: var(--rz-panel-menu-item-padding);">

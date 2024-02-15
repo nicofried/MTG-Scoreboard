@@ -82,6 +82,8 @@
             this.Player7Dead = new System.Windows.Forms.Label();
             this.Player8Dead = new System.Windows.Forms.Label();
             this.QRCode = new System.Windows.Forms.PictureBox();
+            this.WifiConnect = new System.Windows.Forms.PictureBox();
+            this.wificonnector = new RoundButton();
             this.ResetPassword = new RoundButton();
             this.Treachery8Unveil = new RoundButton();
             this.Treachery7Unveil = new RoundButton();
@@ -172,8 +174,6 @@
             this.Player2AOEDMG = new RoundButton();
             this.Treachery1Unveil = new RoundButton();
             this.Player1AOEDMG = new RoundButton();
-            this.WifiConnect = new System.Windows.Forms.PictureBox();
-            this.wificonnector = new RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.CommanderImage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Treachery2)).BeginInit();
@@ -204,9 +204,8 @@
             // 
             // CommanderImage1
             // 
-            this.CommanderImage1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage1.BackColor = System.Drawing.Color.Black;
             this.CommanderImage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CommanderImage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CommanderImage1.Location = new System.Drawing.Point(5, 48);
             this.CommanderImage1.Name = "CommanderImage1";
             this.CommanderImage1.Size = new System.Drawing.Size(169, 238);
@@ -216,7 +215,7 @@
             // 
             // Commander1
             // 
-            this.Commander1.Font = new System.Drawing.Font("Arial Rounded MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Commander1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Commander1.Location = new System.Drawing.Point(1398, 77);
             this.Commander1.Name = "Commander1";
             this.Commander1.Size = new System.Drawing.Size(222, 31);
@@ -225,7 +224,7 @@
             // 
             // CommandComboBox1
             // 
-            this.CommandComboBox1.Font = new System.Drawing.Font("Arial Rounded MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CommandComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CommandComboBox1.FormattingEnabled = true;
             this.CommandComboBox1.Location = new System.Drawing.Point(1398, 43);
             this.CommandComboBox1.Name = "CommandComboBox1";
@@ -235,10 +234,12 @@
             // 
             // Player1
             // 
-            this.Player1.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1.BackColor = System.Drawing.Color.White;
+            this.Player1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1.Location = new System.Drawing.Point(5, 7);
             this.Player1.Name = "Player1";
-            this.Player1.Size = new System.Drawing.Size(169, 40);
+            this.Player1.Size = new System.Drawing.Size(169, 38);
             this.Player1.TabIndex = 31;
             this.Player1.Text = "Player 1";
             this.Player1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -266,11 +267,13 @@
             // 
             // Player2
             // 
-            this.Player2.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2.BackColor = System.Drawing.Color.White;
+            this.Player2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2.ForeColor = System.Drawing.Color.Red;
             this.Player2.Location = new System.Drawing.Point(180, 7);
             this.Player2.Name = "Player2";
-            this.Player2.Size = new System.Drawing.Size(169, 40);
+            this.Player2.Size = new System.Drawing.Size(169, 38);
             this.Player2.TabIndex = 69;
             this.Player2.Text = "Player 2";
             this.Player2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -278,7 +281,7 @@
             // 
             // CommanderImage2
             // 
-            this.CommanderImage2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage2.BackColor = System.Drawing.Color.Black;
             this.CommanderImage2.Location = new System.Drawing.Point(180, 48);
             this.CommanderImage2.Name = "CommanderImage2";
             this.CommanderImage2.Size = new System.Drawing.Size(169, 238);
@@ -298,11 +301,13 @@
             // 
             // Player3
             // 
-            this.Player3.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3.BackColor = System.Drawing.Color.White;
+            this.Player3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player3.ForeColor = System.Drawing.Color.LimeGreen;
             this.Player3.Location = new System.Drawing.Point(355, 7);
             this.Player3.Name = "Player3";
-            this.Player3.Size = new System.Drawing.Size(169, 40);
+            this.Player3.Size = new System.Drawing.Size(169, 38);
             this.Player3.TabIndex = 119;
             this.Player3.Text = "Player 3";
             this.Player3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -310,7 +315,7 @@
             // 
             // CommanderImage3
             // 
-            this.CommanderImage3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage3.BackColor = System.Drawing.Color.Black;
             this.CommanderImage3.Location = new System.Drawing.Point(355, 48);
             this.CommanderImage3.Name = "CommanderImage3";
             this.CommanderImage3.Size = new System.Drawing.Size(169, 238);
@@ -321,77 +326,110 @@
             // Player1HP
             // 
             this.Player1HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player1HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player1HP.Location = new System.Drawing.Point(88, 286);
+            this.Player1HP.Location = new System.Drawing.Point(88, 287);
             this.Player1HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player1HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player1HP.Name = "Player1HP";
             this.Player1HP.Size = new System.Drawing.Size(84, 38);
             this.Player1HP.TabIndex = 290;
             this.Player1HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player1HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player1HP.ValueChanged += new System.EventHandler(this.Player1HP_ValueChanged);
             // 
             // RolePlayer1
             // 
             this.RolePlayer1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer1.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer1.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer1.Location = new System.Drawing.Point(5, 568);
             this.RolePlayer1.Name = "RolePlayer1";
-            this.RolePlayer1.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer1.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer1.TabIndex = 298;
-            this.RolePlayer1.Text = "Leader";
+            this.RolePlayer1.Text = "Not Set";
             this.RolePlayer1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer1.TextChanged += new System.EventHandler(this.RolePlayer1_TextChanged);
             // 
             // Player2HP
             // 
             this.Player2HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player2HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player2HP.Location = new System.Drawing.Point(261, 286);
+            this.Player2HP.Location = new System.Drawing.Point(261, 287);
             this.Player2HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player2HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player2HP.Name = "Player2HP";
             this.Player2HP.Size = new System.Drawing.Size(88, 38);
             this.Player2HP.TabIndex = 299;
             this.Player2HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player2HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player2HP.ValueChanged += new System.EventHandler(this.Player2HP_ValueChanged);
             // 
             // Player3HP
             // 
-            this.Player3HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player3HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3HP.BackColor = System.Drawing.Color.Black;
+            this.Player3HP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player3HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player3HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player3HP.Location = new System.Drawing.Point(438, 286);
+            this.Player3HP.Location = new System.Drawing.Point(438, 287);
             this.Player3HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player3HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player3HP.Name = "Player3HP";
             this.Player3HP.Size = new System.Drawing.Size(86, 38);
             this.Player3HP.TabIndex = 300;
             this.Player3HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player3HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player3HP.ValueChanged += new System.EventHandler(this.Player3HP_ValueChanged);
             // 
             // RolePlayer2
             // 
             this.RolePlayer2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer2.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer2.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer2.Location = new System.Drawing.Point(180, 568);
             this.RolePlayer2.Name = "RolePlayer2";
-            this.RolePlayer2.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer2.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer2.TabIndex = 309;
-            this.RolePlayer2.Text = "Leader";
+            this.RolePlayer2.Text = "Not Set";
             this.RolePlayer2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer2.Visible = false;
             this.RolePlayer2.TextChanged += new System.EventHandler(this.RolePlayer2_TextChanged);
@@ -399,13 +437,14 @@
             // RolePlayer3
             // 
             this.RolePlayer3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer3.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer3.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer3.Location = new System.Drawing.Point(355, 568);
             this.RolePlayer3.Name = "RolePlayer3";
-            this.RolePlayer3.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer3.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer3.TabIndex = 318;
-            this.RolePlayer3.Text = "Leader";
+            this.RolePlayer3.Text = "Not Set";
             this.RolePlayer3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer3.Visible = false;
             this.RolePlayer3.TextChanged += new System.EventHandler(this.RolePlayer3_TextChanged);
@@ -413,90 +452,126 @@
             // RolePlayer6
             // 
             this.RolePlayer6.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer6.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer6.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer6.Location = new System.Drawing.Point(878, 568);
             this.RolePlayer6.Name = "RolePlayer6";
-            this.RolePlayer6.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer6.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer6.TabIndex = 363;
-            this.RolePlayer6.Text = "Leader";
+            this.RolePlayer6.Text = "Not Set";
             this.RolePlayer6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer6.Visible = false;
+            this.RolePlayer6.TextChanged += new System.EventHandler(this.RolePlayer6_TextChanged);
             // 
             // RolePlayer5
             // 
             this.RolePlayer5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer5.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer5.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer5.Location = new System.Drawing.Point(703, 568);
             this.RolePlayer5.Name = "RolePlayer5";
-            this.RolePlayer5.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer5.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer5.TabIndex = 354;
-            this.RolePlayer5.Text = "Leader";
+            this.RolePlayer5.Text = "Not Set";
             this.RolePlayer5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer5.Visible = false;
+            this.RolePlayer5.TextChanged += new System.EventHandler(this.RolePlayer5_TextChanged);
             // 
             // Player6HP
             // 
             this.Player6HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player6HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player6HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player6HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player6HP.Location = new System.Drawing.Point(959, 286);
+            this.Player6HP.Location = new System.Drawing.Point(959, 287);
             this.Player6HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player6HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player6HP.Name = "Player6HP";
             this.Player6HP.Size = new System.Drawing.Size(88, 38);
             this.Player6HP.TabIndex = 345;
             this.Player6HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player6HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player6HP.ValueChanged += new System.EventHandler(this.Player6HP_ValueChanged);
             // 
             // Player5HP
             // 
             this.Player5HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player5HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player5HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player5HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player5HP.Location = new System.Drawing.Point(786, 286);
+            this.Player5HP.Location = new System.Drawing.Point(786, 287);
             this.Player5HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player5HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player5HP.Name = "Player5HP";
             this.Player5HP.Size = new System.Drawing.Size(86, 38);
             this.Player5HP.TabIndex = 344;
             this.Player5HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player5HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player5HP.ValueChanged += new System.EventHandler(this.Player5HP_ValueChanged);
             // 
             // RolePlayer4
             // 
             this.RolePlayer4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer4.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer4.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer4.Location = new System.Drawing.Point(530, 568);
             this.RolePlayer4.Name = "RolePlayer4";
-            this.RolePlayer4.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer4.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer4.TabIndex = 343;
-            this.RolePlayer4.Text = "Leader";
+            this.RolePlayer4.Text = "Not Set";
             this.RolePlayer4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RolePlayer4.TextChanged += new System.EventHandler(this.RolePlayer4_TextChanged);
             // 
             // Player4HP
             // 
             this.Player4HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player4HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player4HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player4HP.Location = new System.Drawing.Point(613, 284);
+            this.Player4HP.Location = new System.Drawing.Point(613, 287);
             this.Player4HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player4HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player4HP.Name = "Player4HP";
             this.Player4HP.Size = new System.Drawing.Size(86, 38);
             this.Player4HP.TabIndex = 335;
             this.Player4HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player4HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player4HP.ValueChanged += new System.EventHandler(this.Player4HP_ValueChanged);
             // 
             // Treachery6
@@ -511,11 +586,13 @@
             // 
             // Player6
             // 
-            this.Player6.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player6.BackColor = System.Drawing.Color.White;
+            this.Player6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player6.ForeColor = System.Drawing.Color.LimeGreen;
             this.Player6.Location = new System.Drawing.Point(876, 7);
             this.Player6.Name = "Player6";
-            this.Player6.Size = new System.Drawing.Size(171, 40);
+            this.Player6.Size = new System.Drawing.Size(171, 38);
             this.Player6.TabIndex = 331;
             this.Player6.Text = "Player 6";
             this.Player6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -523,7 +600,7 @@
             // 
             // CommanderImage6
             // 
-            this.CommanderImage6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage6.BackColor = System.Drawing.Color.Black;
             this.CommanderImage6.Location = new System.Drawing.Point(878, 48);
             this.CommanderImage6.Name = "CommanderImage6";
             this.CommanderImage6.Size = new System.Drawing.Size(169, 238);
@@ -543,11 +620,13 @@
             // 
             // Player5
             // 
-            this.Player5.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player5.BackColor = System.Drawing.Color.White;
+            this.Player5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player5.ForeColor = System.Drawing.Color.Red;
             this.Player5.Location = new System.Drawing.Point(703, 7);
             this.Player5.Name = "Player5";
-            this.Player5.Size = new System.Drawing.Size(169, 40);
+            this.Player5.Size = new System.Drawing.Size(169, 38);
             this.Player5.TabIndex = 326;
             this.Player5.Text = "Player 5";
             this.Player5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -555,7 +634,7 @@
             // 
             // CommanderImage5
             // 
-            this.CommanderImage5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage5.BackColor = System.Drawing.Color.Black;
             this.CommanderImage5.Location = new System.Drawing.Point(703, 48);
             this.CommanderImage5.Name = "CommanderImage5";
             this.CommanderImage5.Size = new System.Drawing.Size(169, 238);
@@ -575,10 +654,12 @@
             // 
             // Player4
             // 
-            this.Player4.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4.BackColor = System.Drawing.Color.White;
+            this.Player4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player4.Location = new System.Drawing.Point(530, 7);
             this.Player4.Name = "Player4";
-            this.Player4.Size = new System.Drawing.Size(169, 40);
+            this.Player4.Size = new System.Drawing.Size(169, 38);
             this.Player4.TabIndex = 321;
             this.Player4.Text = "Player 4";
             this.Player4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -586,9 +667,8 @@
             // 
             // CommanderImage4
             // 
-            this.CommanderImage4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage4.BackColor = System.Drawing.Color.Black;
             this.CommanderImage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CommanderImage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CommanderImage4.Location = new System.Drawing.Point(530, 47);
             this.CommanderImage4.Name = "CommanderImage4";
             this.CommanderImage4.Size = new System.Drawing.Size(169, 238);
@@ -599,44 +679,66 @@
             // Player8HP
             // 
             this.Player8HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player8HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player8HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player8HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player8HP.Location = new System.Drawing.Point(1306, 284);
+            this.Player8HP.Location = new System.Drawing.Point(1306, 287);
             this.Player8HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player8HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player8HP.Name = "Player8HP";
             this.Player8HP.Size = new System.Drawing.Size(86, 38);
             this.Player8HP.TabIndex = 371;
             this.Player8HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player8HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player8HP.ValueChanged += new System.EventHandler(this.Player8HP_ValueChanged);
             // 
             // Player7HP
             // 
             this.Player7HP.BackColor = System.Drawing.SystemColors.InfoText;
-            this.Player7HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player7HP.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player7HP.ForeColor = System.Drawing.SystemColors.Window;
-            this.Player7HP.Location = new System.Drawing.Point(1133, 286);
+            this.Player7HP.Location = new System.Drawing.Point(1133, 287);
             this.Player7HP.Maximum = new decimal(new int[] {
-            1000,
+            1000000,
             0,
             0,
             0});
+            this.Player7HP.Minimum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
             this.Player7HP.Name = "Player7HP";
             this.Player7HP.Size = new System.Drawing.Size(87, 38);
             this.Player7HP.TabIndex = 370;
             this.Player7HP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Player7HP.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
             this.Player7HP.ValueChanged += new System.EventHandler(this.Player7HP_ValueChanged);
             // 
             // Player8
             // 
-            this.Player8.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player8.BackColor = System.Drawing.Color.White;
+            this.Player8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player8.ForeColor = System.Drawing.Color.LimeGreen;
             this.Player8.Location = new System.Drawing.Point(1223, 7);
             this.Player8.Name = "Player8";
-            this.Player8.Size = new System.Drawing.Size(169, 40);
+            this.Player8.Size = new System.Drawing.Size(169, 38);
             this.Player8.TabIndex = 369;
             this.Player8.Text = "Player 8";
             this.Player8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -644,7 +746,7 @@
             // 
             // CommanderImage8
             // 
-            this.CommanderImage8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage8.BackColor = System.Drawing.Color.Black;
             this.CommanderImage8.Location = new System.Drawing.Point(1223, 47);
             this.CommanderImage8.Name = "CommanderImage8";
             this.CommanderImage8.Size = new System.Drawing.Size(169, 238);
@@ -654,11 +756,13 @@
             // 
             // Player7
             // 
-            this.Player7.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player7.BackColor = System.Drawing.Color.White;
+            this.Player7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Player7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player7.ForeColor = System.Drawing.Color.Red;
             this.Player7.Location = new System.Drawing.Point(1050, 7);
             this.Player7.Name = "Player7";
-            this.Player7.Size = new System.Drawing.Size(170, 40);
+            this.Player7.Size = new System.Drawing.Size(170, 38);
             this.Player7.TabIndex = 366;
             this.Player7.Text = "Player 7";
             this.Player7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -666,7 +770,7 @@
             // 
             // CommanderImage7
             // 
-            this.CommanderImage7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CommanderImage7.BackColor = System.Drawing.Color.Black;
             this.CommanderImage7.Location = new System.Drawing.Point(1051, 48);
             this.CommanderImage7.Name = "CommanderImage7";
             this.CommanderImage7.Size = new System.Drawing.Size(169, 238);
@@ -677,28 +781,32 @@
             // RolePlayer8
             // 
             this.RolePlayer8.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer8.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer8.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer8.Location = new System.Drawing.Point(1223, 568);
             this.RolePlayer8.Name = "RolePlayer8";
-            this.RolePlayer8.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer8.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer8.TabIndex = 393;
-            this.RolePlayer8.Text = "Leader";
+            this.RolePlayer8.Text = "Not Set";
             this.RolePlayer8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer8.Visible = false;
+            this.RolePlayer8.TextChanged += new System.EventHandler(this.RolePlayer8_TextChanged);
             // 
             // RolePlayer7
             // 
             this.RolePlayer7.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RolePlayer7.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolePlayer7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RolePlayer7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RolePlayer7.ForeColor = System.Drawing.SystemColors.Window;
             this.RolePlayer7.Location = new System.Drawing.Point(1050, 568);
             this.RolePlayer7.Name = "RolePlayer7";
-            this.RolePlayer7.Size = new System.Drawing.Size(169, 40);
+            this.RolePlayer7.Size = new System.Drawing.Size(169, 38);
             this.RolePlayer7.TabIndex = 392;
-            this.RolePlayer7.Text = "Leader";
+            this.RolePlayer7.Text = "Not Set";
             this.RolePlayer7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RolePlayer7.Visible = false;
+            this.RolePlayer7.TextChanged += new System.EventHandler(this.RolePlayer7_TextChanged);
             // 
             // Treachery8
             // 
@@ -723,7 +831,7 @@
             // CommanderSelector
             // 
             this.CommanderSelector.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CommanderSelector.Font = new System.Drawing.Font("Arial Rounded MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CommanderSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CommanderSelector.FormattingEnabled = true;
             this.CommanderSelector.Location = new System.Drawing.Point(1398, 7);
             this.CommanderSelector.Name = "CommanderSelector";
@@ -735,120 +843,151 @@
             // Player1Dead
             // 
             this.Player1Dead.AutoSize = true;
-            this.Player1Dead.BackColor = System.Drawing.Color.Black;
-            this.Player1Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player1Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player1Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player1Dead.Location = new System.Drawing.Point(12, 125);
             this.Player1Dead.Name = "Player1Dead";
-            this.Player1Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player1Dead.Size = new System.Drawing.Size(158, 55);
             this.Player1Dead.TabIndex = 395;
             this.Player1Dead.Text = "DEAD";
+            this.Player1Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player1Dead.Visible = false;
+            this.Player1Dead.Click += new System.EventHandler(this.Player1Dead_Click);
             // 
             // Player2Dead
             // 
             this.Player2Dead.AutoSize = true;
-            this.Player2Dead.BackColor = System.Drawing.Color.Black;
-            this.Player2Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player2Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player2Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player2Dead.Location = new System.Drawing.Point(187, 125);
             this.Player2Dead.Name = "Player2Dead";
-            this.Player2Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player2Dead.Size = new System.Drawing.Size(158, 55);
             this.Player2Dead.TabIndex = 396;
             this.Player2Dead.Text = "DEAD";
+            this.Player2Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player2Dead.Visible = false;
             // 
             // Player3Dead
             // 
             this.Player3Dead.AutoSize = true;
-            this.Player3Dead.BackColor = System.Drawing.Color.Black;
-            this.Player3Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player3Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player3Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player3Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player3Dead.Location = new System.Drawing.Point(362, 125);
             this.Player3Dead.Name = "Player3Dead";
-            this.Player3Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player3Dead.Size = new System.Drawing.Size(158, 55);
             this.Player3Dead.TabIndex = 397;
             this.Player3Dead.Text = "DEAD";
+            this.Player3Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player3Dead.Visible = false;
             // 
             // Player4Dead
             // 
             this.Player4Dead.AutoSize = true;
-            this.Player4Dead.BackColor = System.Drawing.Color.Black;
-            this.Player4Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player4Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player4Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player4Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player4Dead.Location = new System.Drawing.Point(538, 125);
             this.Player4Dead.Name = "Player4Dead";
-            this.Player4Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player4Dead.Size = new System.Drawing.Size(158, 55);
             this.Player4Dead.TabIndex = 398;
             this.Player4Dead.Text = "DEAD";
+            this.Player4Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player4Dead.Visible = false;
             // 
             // Player5Dead
             // 
             this.Player5Dead.AutoSize = true;
-            this.Player5Dead.BackColor = System.Drawing.Color.Black;
-            this.Player5Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player5Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player5Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player5Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player5Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player5Dead.Location = new System.Drawing.Point(710, 125);
             this.Player5Dead.Name = "Player5Dead";
-            this.Player5Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player5Dead.Size = new System.Drawing.Size(158, 55);
             this.Player5Dead.TabIndex = 399;
             this.Player5Dead.Text = "DEAD";
+            this.Player5Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player5Dead.Visible = false;
             // 
             // Player6Dead
             // 
             this.Player6Dead.AutoSize = true;
-            this.Player6Dead.BackColor = System.Drawing.Color.Black;
-            this.Player6Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player6Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player6Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player6Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player6Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player6Dead.Location = new System.Drawing.Point(884, 125);
             this.Player6Dead.Name = "Player6Dead";
-            this.Player6Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player6Dead.Size = new System.Drawing.Size(158, 55);
             this.Player6Dead.TabIndex = 400;
             this.Player6Dead.Text = "DEAD";
+            this.Player6Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player6Dead.Visible = false;
             // 
             // Player7Dead
             // 
             this.Player7Dead.AutoSize = true;
-            this.Player7Dead.BackColor = System.Drawing.Color.Black;
-            this.Player7Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player7Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player7Dead.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Player7Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player7Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player7Dead.Location = new System.Drawing.Point(1059, 125);
             this.Player7Dead.Name = "Player7Dead";
-            this.Player7Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player7Dead.Size = new System.Drawing.Size(158, 55);
             this.Player7Dead.TabIndex = 401;
             this.Player7Dead.Text = "DEAD";
+            this.Player7Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player7Dead.Visible = false;
             // 
             // Player8Dead
             // 
             this.Player8Dead.AutoSize = true;
             this.Player8Dead.BackColor = System.Drawing.Color.Black;
-            this.Player8Dead.Font = new System.Drawing.Font("Arial Rounded MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player8Dead.ForeColor = System.Drawing.Color.Red;
+            this.Player8Dead.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player8Dead.ForeColor = System.Drawing.Color.Maroon;
             this.Player8Dead.Location = new System.Drawing.Point(1230, 125);
             this.Player8Dead.Name = "Player8Dead";
-            this.Player8Dead.Size = new System.Drawing.Size(156, 56);
+            this.Player8Dead.Size = new System.Drawing.Size(158, 55);
             this.Player8Dead.TabIndex = 402;
             this.Player8Dead.Text = "DEAD";
+            this.Player8Dead.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Player8Dead.Visible = false;
             // 
             // QRCode
             // 
+            this.QRCode.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.QRCode.Location = new System.Drawing.Point(1444, 618);
             this.QRCode.Name = "QRCode";
             this.QRCode.Size = new System.Drawing.Size(125, 125);
             this.QRCode.TabIndex = 403;
             this.QRCode.TabStop = false;
             // 
+            // WifiConnect
+            // 
+            this.WifiConnect.BackColor = System.Drawing.Color.LightGray;
+            this.WifiConnect.Location = new System.Drawing.Point(1444, 618);
+            this.WifiConnect.Name = "WifiConnect";
+            this.WifiConnect.Size = new System.Drawing.Size(125, 125);
+            this.WifiConnect.TabIndex = 405;
+            this.WifiConnect.TabStop = false;
+            // 
+            // wificonnector
+            // 
+            this.wificonnector.CornerRadius = 10;
+            this.wificonnector.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wificonnector.Location = new System.Drawing.Point(1398, 564);
+            this.wificonnector.Name = "wificonnector";
+            this.wificonnector.Size = new System.Drawing.Size(222, 45);
+            this.wificonnector.TabIndex = 406;
+            this.wificonnector.Text = "Show Wifi";
+            this.wificonnector.UseVisualStyleBackColor = true;
+            this.wificonnector.Click += new System.EventHandler(this.wificonnector_Click);
+            // 
             // ResetPassword
             // 
-            this.ResetPassword.CornerRadius = 30;
-            this.ResetPassword.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResetPassword.Location = new System.Drawing.Point(1398, 513);
+            this.ResetPassword.CornerRadius = 10;
+            this.ResetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetPassword.Location = new System.Drawing.Point(1398, 519);
             this.ResetPassword.Name = "ResetPassword";
             this.ResetPassword.Size = new System.Drawing.Size(222, 45);
             this.ResetPassword.TabIndex = 404;
@@ -858,26 +997,28 @@
             // 
             // Treachery8Unveil
             // 
-            this.Treachery8Unveil.CornerRadius = 30;
-            this.Treachery8Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery8Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery8Unveil.CornerRadius = 10;
+            this.Treachery8Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery8Unveil.Location = new System.Drawing.Point(1223, 843);
             this.Treachery8Unveil.Name = "Treachery8Unveil";
             this.Treachery8Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery8Unveil.TabIndex = 391;
             this.Treachery8Unveil.Text = "Unveil";
-            this.Treachery8Unveil.UseVisualStyleBackColor = true;
+            this.Treachery8Unveil.UseVisualStyleBackColor = false;
             this.Treachery8Unveil.Click += new System.EventHandler(this.Treachery8Unveil_Click);
             // 
             // Treachery7Unveil
             // 
-            this.Treachery7Unveil.CornerRadius = 30;
-            this.Treachery7Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery7Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery7Unveil.CornerRadius = 10;
+            this.Treachery7Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery7Unveil.Location = new System.Drawing.Point(1050, 843);
             this.Treachery7Unveil.Name = "Treachery7Unveil";
             this.Treachery7Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery7Unveil.TabIndex = 389;
             this.Treachery7Unveil.Text = "Unveil";
-            this.Treachery7Unveil.UseVisualStyleBackColor = true;
+            this.Treachery7Unveil.UseVisualStyleBackColor = false;
             this.Treachery7Unveil.Click += new System.EventHandler(this.Treachery7Unveil_Click);
             // 
             // P7CommanderDMGP8
@@ -1090,9 +1231,9 @@
             // 
             // Player8AOEDMG
             // 
-            this.Player8AOEDMG.CornerRadius = 30;
-            this.Player8AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player8AOEDMG.Location = new System.Drawing.Point(1223, 284);
+            this.Player8AOEDMG.CornerRadius = 10;
+            this.Player8AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player8AOEDMG.Location = new System.Drawing.Point(1223, 287);
             this.Player8AOEDMG.Name = "Player8AOEDMG";
             this.Player8AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player8AOEDMG.TabIndex = 368;
@@ -1102,9 +1243,9 @@
             // 
             // Player7AOEDMG
             // 
-            this.Player7AOEDMG.CornerRadius = 30;
-            this.Player7AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player7AOEDMG.Location = new System.Drawing.Point(1050, 284);
+            this.Player7AOEDMG.CornerRadius = 10;
+            this.Player7AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player7AOEDMG.Location = new System.Drawing.Point(1050, 287);
             this.Player7AOEDMG.Name = "Player7AOEDMG";
             this.Player7AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player7AOEDMG.TabIndex = 365;
@@ -1427,21 +1568,22 @@
             // 
             // Treachery6Unveil
             // 
-            this.Treachery6Unveil.CornerRadius = 30;
-            this.Treachery6Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery6Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery6Unveil.CornerRadius = 10;
+            this.Treachery6Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery6Unveil.Location = new System.Drawing.Point(878, 843);
             this.Treachery6Unveil.Name = "Treachery6Unveil";
             this.Treachery6Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery6Unveil.TabIndex = 333;
             this.Treachery6Unveil.Text = "Unveil";
-            this.Treachery6Unveil.UseVisualStyleBackColor = true;
+            this.Treachery6Unveil.UseVisualStyleBackColor = false;
             this.Treachery6Unveil.Click += new System.EventHandler(this.Treachery6Unveil_Click);
             // 
             // Player6AOEDMG
             // 
-            this.Player6AOEDMG.CornerRadius = 30;
-            this.Player6AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player6AOEDMG.Location = new System.Drawing.Point(876, 284);
+            this.Player6AOEDMG.CornerRadius = 10;
+            this.Player6AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player6AOEDMG.Location = new System.Drawing.Point(876, 287);
             this.Player6AOEDMG.Name = "Player6AOEDMG";
             this.Player6AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player6AOEDMG.TabIndex = 330;
@@ -1451,21 +1593,22 @@
             // 
             // Treachery5Unveil
             // 
-            this.Treachery5Unveil.CornerRadius = 30;
-            this.Treachery5Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery5Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery5Unveil.CornerRadius = 10;
+            this.Treachery5Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery5Unveil.Location = new System.Drawing.Point(703, 843);
             this.Treachery5Unveil.Name = "Treachery5Unveil";
             this.Treachery5Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery5Unveil.TabIndex = 328;
             this.Treachery5Unveil.Text = "Unveil";
-            this.Treachery5Unveil.UseVisualStyleBackColor = true;
+            this.Treachery5Unveil.UseVisualStyleBackColor = false;
             this.Treachery5Unveil.Click += new System.EventHandler(this.Treachery5Unveil_Click);
             // 
             // Player5AOEDMG
             // 
-            this.Player5AOEDMG.CornerRadius = 30;
-            this.Player5AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player5AOEDMG.Location = new System.Drawing.Point(703, 286);
+            this.Player5AOEDMG.CornerRadius = 10;
+            this.Player5AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player5AOEDMG.Location = new System.Drawing.Point(703, 287);
             this.Player5AOEDMG.Name = "Player5AOEDMG";
             this.Player5AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player5AOEDMG.TabIndex = 325;
@@ -1475,21 +1618,22 @@
             // 
             // Treachery4Unveil
             // 
-            this.Treachery4Unveil.CornerRadius = 30;
-            this.Treachery4Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery4Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery4Unveil.CornerRadius = 10;
+            this.Treachery4Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery4Unveil.Location = new System.Drawing.Point(530, 843);
             this.Treachery4Unveil.Name = "Treachery4Unveil";
             this.Treachery4Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery4Unveil.TabIndex = 323;
             this.Treachery4Unveil.Text = "Unveil";
-            this.Treachery4Unveil.UseVisualStyleBackColor = true;
+            this.Treachery4Unveil.UseVisualStyleBackColor = false;
             this.Treachery4Unveil.Click += new System.EventHandler(this.Treachery4Unveil_Click);
             // 
             // Player4AOEDMG
             // 
-            this.Player4AOEDMG.CornerRadius = 30;
-            this.Player4AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player4AOEDMG.Location = new System.Drawing.Point(530, 284);
+            this.Player4AOEDMG.CornerRadius = 10;
+            this.Player4AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4AOEDMG.Location = new System.Drawing.Point(530, 287);
             this.Player4AOEDMG.Name = "Player4AOEDMG";
             this.Player4AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player4AOEDMG.TabIndex = 320;
@@ -1819,21 +1963,22 @@
             // 
             // Treachery3Unveil
             // 
-            this.Treachery3Unveil.CornerRadius = 30;
-            this.Treachery3Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery3Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery3Unveil.CornerRadius = 10;
+            this.Treachery3Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery3Unveil.Location = new System.Drawing.Point(355, 843);
             this.Treachery3Unveil.Name = "Treachery3Unveil";
             this.Treachery3Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery3Unveil.TabIndex = 136;
             this.Treachery3Unveil.Text = "Unveil";
-            this.Treachery3Unveil.UseVisualStyleBackColor = true;
+            this.Treachery3Unveil.UseVisualStyleBackColor = false;
             this.Treachery3Unveil.Click += new System.EventHandler(this.Treachery3Unveil_Click);
             // 
             // Player3AOEDMG
             // 
-            this.Player3AOEDMG.CornerRadius = 30;
-            this.Player3AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player3AOEDMG.Location = new System.Drawing.Point(355, 286);
+            this.Player3AOEDMG.CornerRadius = 10;
+            this.Player3AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3AOEDMG.Location = new System.Drawing.Point(355, 287);
             this.Player3AOEDMG.Name = "Player3AOEDMG";
             this.Player3AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player3AOEDMG.TabIndex = 111;
@@ -1843,8 +1988,8 @@
             // 
             // StartTreachery
             // 
-            this.StartTreachery.CornerRadius = 30;
-            this.StartTreachery.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartTreachery.CornerRadius = 10;
+            this.StartTreachery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartTreachery.Location = new System.Drawing.Point(1398, 159);
             this.StartTreachery.Name = "StartTreachery";
             this.StartTreachery.Size = new System.Drawing.Size(222, 45);
@@ -1855,21 +2000,23 @@
             // 
             // NewGame
             // 
-            this.NewGame.CornerRadius = 30;
-            this.NewGame.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewGame.BackColor = System.Drawing.SystemColors.Control;
+            this.NewGame.CornerRadius = 10;
+            this.NewGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewGame.ForeColor = System.Drawing.SystemColors.ControlText;
             this.NewGame.Location = new System.Drawing.Point(1398, 114);
             this.NewGame.Name = "NewGame";
             this.NewGame.Size = new System.Drawing.Size(222, 45);
             this.NewGame.TabIndex = 99;
             this.NewGame.Text = "New Game";
-            this.NewGame.UseVisualStyleBackColor = true;
+            this.NewGame.UseVisualStyleBackColor = false;
             this.NewGame.Click += new System.EventHandler(this.NewGame_Click);
             // 
             // SetPlayersTo8
             // 
-            this.SetPlayersTo8.CornerRadius = 30;
-            this.SetPlayersTo8.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo8.Location = new System.Drawing.Point(1398, 469);
+            this.SetPlayersTo8.CornerRadius = 10;
+            this.SetPlayersTo8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo8.Location = new System.Drawing.Point(1398, 474);
             this.SetPlayersTo8.Name = "SetPlayersTo8";
             this.SetPlayersTo8.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo8.TabIndex = 96;
@@ -1879,9 +2026,9 @@
             // 
             // SetPlayersTo7
             // 
-            this.SetPlayersTo7.CornerRadius = 30;
-            this.SetPlayersTo7.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo7.Location = new System.Drawing.Point(1398, 425);
+            this.SetPlayersTo7.CornerRadius = 10;
+            this.SetPlayersTo7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo7.Location = new System.Drawing.Point(1398, 429);
             this.SetPlayersTo7.Name = "SetPlayersTo7";
             this.SetPlayersTo7.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo7.TabIndex = 95;
@@ -1891,9 +2038,9 @@
             // 
             // SetPlayersTo6
             // 
-            this.SetPlayersTo6.CornerRadius = 30;
-            this.SetPlayersTo6.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo6.Location = new System.Drawing.Point(1398, 381);
+            this.SetPlayersTo6.CornerRadius = 10;
+            this.SetPlayersTo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo6.Location = new System.Drawing.Point(1398, 384);
             this.SetPlayersTo6.Name = "SetPlayersTo6";
             this.SetPlayersTo6.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo6.TabIndex = 94;
@@ -1903,8 +2050,8 @@
             // 
             // SetPlayersTo2
             // 
-            this.SetPlayersTo2.CornerRadius = 30;
-            this.SetPlayersTo2.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo2.CornerRadius = 10;
+            this.SetPlayersTo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SetPlayersTo2.Location = new System.Drawing.Point(1398, 204);
             this.SetPlayersTo2.Name = "SetPlayersTo2";
             this.SetPlayersTo2.Size = new System.Drawing.Size(222, 45);
@@ -1915,8 +2062,8 @@
             // 
             // SetPlayersTo3
             // 
-            this.SetPlayersTo3.CornerRadius = 30;
-            this.SetPlayersTo3.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo3.CornerRadius = 10;
+            this.SetPlayersTo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SetPlayersTo3.Location = new System.Drawing.Point(1398, 249);
             this.SetPlayersTo3.Name = "SetPlayersTo3";
             this.SetPlayersTo3.Size = new System.Drawing.Size(222, 45);
@@ -1927,9 +2074,9 @@
             // 
             // SetPlayersTo4
             // 
-            this.SetPlayersTo4.CornerRadius = 30;
-            this.SetPlayersTo4.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo4.Location = new System.Drawing.Point(1398, 293);
+            this.SetPlayersTo4.CornerRadius = 10;
+            this.SetPlayersTo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo4.Location = new System.Drawing.Point(1398, 294);
             this.SetPlayersTo4.Name = "SetPlayersTo4";
             this.SetPlayersTo4.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo4.TabIndex = 91;
@@ -1939,9 +2086,9 @@
             // 
             // SetPlayersTo5
             // 
-            this.SetPlayersTo5.CornerRadius = 30;
-            this.SetPlayersTo5.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SetPlayersTo5.Location = new System.Drawing.Point(1398, 337);
+            this.SetPlayersTo5.CornerRadius = 10;
+            this.SetPlayersTo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetPlayersTo5.Location = new System.Drawing.Point(1398, 339);
             this.SetPlayersTo5.Name = "SetPlayersTo5";
             this.SetPlayersTo5.Size = new System.Drawing.Size(222, 45);
             this.SetPlayersTo5.TabIndex = 90;
@@ -1951,21 +2098,22 @@
             // 
             // Treachery2Unveil
             // 
-            this.Treachery2Unveil.CornerRadius = 30;
-            this.Treachery2Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery2Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery2Unveil.CornerRadius = 10;
+            this.Treachery2Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery2Unveil.Location = new System.Drawing.Point(180, 843);
             this.Treachery2Unveil.Name = "Treachery2Unveil";
             this.Treachery2Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery2Unveil.TabIndex = 89;
             this.Treachery2Unveil.Text = "Unveil";
-            this.Treachery2Unveil.UseVisualStyleBackColor = true;
+            this.Treachery2Unveil.UseVisualStyleBackColor = false;
             this.Treachery2Unveil.Click += new System.EventHandler(this.Treachery2Unveil_Click);
             // 
             // Player2AOEDMG
             // 
-            this.Player2AOEDMG.CornerRadius = 30;
-            this.Player2AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2AOEDMG.Location = new System.Drawing.Point(178, 286);
+            this.Player2AOEDMG.CornerRadius = 10;
+            this.Player2AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2AOEDMG.Location = new System.Drawing.Point(178, 287);
             this.Player2AOEDMG.Name = "Player2AOEDMG";
             this.Player2AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player2AOEDMG.TabIndex = 61;
@@ -1975,47 +2123,28 @@
             // 
             // Treachery1Unveil
             // 
-            this.Treachery1Unveil.CornerRadius = 30;
-            this.Treachery1Unveil.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Treachery1Unveil.BackColor = System.Drawing.Color.LightGray;
+            this.Treachery1Unveil.CornerRadius = 10;
+            this.Treachery1Unveil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Treachery1Unveil.Location = new System.Drawing.Point(5, 843);
             this.Treachery1Unveil.Name = "Treachery1Unveil";
             this.Treachery1Unveil.Size = new System.Drawing.Size(169, 31);
             this.Treachery1Unveil.TabIndex = 51;
             this.Treachery1Unveil.Text = "Unveil";
-            this.Treachery1Unveil.UseVisualStyleBackColor = true;
+            this.Treachery1Unveil.UseVisualStyleBackColor = false;
             this.Treachery1Unveil.Click += new System.EventHandler(this.Treachery1Unveil_Click);
             // 
             // Player1AOEDMG
             // 
-            this.Player1AOEDMG.CornerRadius = 30;
-            this.Player1AOEDMG.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1AOEDMG.Location = new System.Drawing.Point(5, 286);
+            this.Player1AOEDMG.CornerRadius = 10;
+            this.Player1AOEDMG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1AOEDMG.Location = new System.Drawing.Point(5, 287);
             this.Player1AOEDMG.Name = "Player1AOEDMG";
             this.Player1AOEDMG.Size = new System.Drawing.Size(77, 38);
             this.Player1AOEDMG.TabIndex = 19;
             this.Player1AOEDMG.Text = "-1 AoE";
             this.Player1AOEDMG.UseVisualStyleBackColor = true;
             this.Player1AOEDMG.Click += new System.EventHandler(this.Player1AOEDMG_Click);
-            // 
-            // WifiConnect
-            // 
-            this.WifiConnect.Location = new System.Drawing.Point(1444, 618);
-            this.WifiConnect.Name = "WifiConnect";
-            this.WifiConnect.Size = new System.Drawing.Size(125, 125);
-            this.WifiConnect.TabIndex = 405;
-            this.WifiConnect.TabStop = false;
-            // 
-            // wificonnector
-            // 
-            this.wificonnector.CornerRadius = 30;
-            this.wificonnector.Font = new System.Drawing.Font("Arial Rounded MT Std Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wificonnector.Location = new System.Drawing.Point(1398, 557);
-            this.wificonnector.Name = "wificonnector";
-            this.wificonnector.Size = new System.Drawing.Size(222, 45);
-            this.wificonnector.TabIndex = 406;
-            this.wificonnector.Text = "Show Wifi";
-            this.wificonnector.UseVisualStyleBackColor = true;
-            this.wificonnector.Click += new System.EventHandler(this.wificonnector_Click);
             // 
             // Form1
             // 
@@ -2024,10 +2153,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
-            this.Controls.Add(this.wificonnector);
-            this.Controls.Add(this.WifiConnect);
-            this.Controls.Add(this.ResetPassword);
-            this.Controls.Add(this.QRCode);
             this.Controls.Add(this.Player8Dead);
             this.Controls.Add(this.Player7Dead);
             this.Controls.Add(this.Player6Dead);
@@ -2036,6 +2161,10 @@
             this.Controls.Add(this.Player3Dead);
             this.Controls.Add(this.Player2Dead);
             this.Controls.Add(this.Player1Dead);
+            this.Controls.Add(this.wificonnector);
+            this.Controls.Add(this.WifiConnect);
+            this.Controls.Add(this.ResetPassword);
+            this.Controls.Add(this.QRCode);
             this.Controls.Add(this.CommanderSelector);
             this.Controls.Add(this.RolePlayer8);
             this.Controls.Add(this.RolePlayer7);

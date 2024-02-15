@@ -1,0 +1,28 @@
+@page "/hovedside"
+<PageTitle>Scoreboard</PageTitle>
+<RadzenRow Gap="1" RowGap="1">
+    <RadzenColumn Size="12" class="center-content">
+        <div class="player-section">
+            <RadzenText Text="Scoreboard" TextStyle="Radzen.Blazor.TextStyle.DisplayH2" TagName="Radzen.Blazor.TagName.Auto"></RadzenText>
+        </div>
+    </RadzenColumn>
+    <RadzenColumn Size="12">
+        <div class="player-section">
+            <RadzenImage Path="images\Treachery\MTGPlaygroup.jpg" Style="width: 250px" />
+        </div>
+    </RadzenColumn>
+</RadzenRow>
+<RadzenRow Gap="2" RowGap="2">
+    @for (int i = 1; i <= Amountofplayers; i++)
+    {
+        int localIndex = i;
+        <RadzenColumn Size="12">
+            <div class="player-section">
+                <RadzenText Text="@($"{@GetPlayerName(localIndex)} HP")" TextStyle="Radzen.Blazor.TextStyle.H4" />
+                <RadzenNumeric TValue="int" Value="@GetPlayerHP(localIndex)" ValueChanged="@(value => UpdatePlayerHP(localIndex, value))" Style="width: 100%" />
+            </div>
+        </RadzenColumn>
+    }
+</RadzenRow>
+
+
