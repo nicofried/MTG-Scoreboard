@@ -6,23 +6,20 @@
             <RadzenText Text="Scoreboard" TextStyle="Radzen.Blazor.TextStyle.DisplayH2" TagName="Radzen.Blazor.TagName.Auto"></RadzenText>
         </div>
     </RadzenColumn>
-    <RadzenColumn Size="12">
-        <div class="player-section">
-            <RadzenImage Path="images\Treachery\MTGPlaygroup.jpg" Style="width: 250px" />
-        </div>
-    </RadzenColumn>
 </RadzenRow>
-<RadzenRow Gap="2" RowGap="2">
+<RadzenRow Style="display: flex; justify-content: center; flex-wrap: wrap;" Class="centered-row" Gap="1" RowGap="1">
     @for (int i = 1; i <= Amountofplayers; i++)
     {
         int localIndex = i;
-        <RadzenColumn Size="12">
+        <RadzenColumn Size="12" SizeXS="6" SizeSM="6" SizeMD="3" SizeLG="3" SizeXL="3" SizeXX="2">
             <div class="player-section">
                 <RadzenText Text="@($"{@GetPlayerName(localIndex)} HP")" TextStyle="Radzen.Blazor.TextStyle.H4" />
-                <RadzenNumeric TValue="int" Value="@GetPlayerHP(localIndex)" ValueChanged="@(value => UpdatePlayerHP(localIndex, value))" Style="width: 100%" />
+                <RadzenImage Path="@GetPlayerCard(localIndex)" Style="width: 250px; display: block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 10px;" />
+                <RadzenNumeric TValue="int" Value="@GetPlayerHP(localIndex)" ValueChanged="@(value => UpdatePlayerHP(localIndex, value))" Style="width: 250px; display: block; margin-left: auto; margin-right: auto;" />
             </div>
         </RadzenColumn>
     }
 </RadzenRow>
+
 
 

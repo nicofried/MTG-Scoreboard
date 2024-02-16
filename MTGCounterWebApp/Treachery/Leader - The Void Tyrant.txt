@@ -1,0 +1,7 @@
+Counters on identity cards cannot be proliferated because identity cards aren’t permanents.
+Activated abilities contain a colon. They’re written in the form "[Cost]: [Effect]." Some keyword abilities, such as equip and crew, are activated abilities and will have colons in their reminder texts.
+Triggered abilities use the word "when," "whenever," or "at." They’re often written as "[Trigger condition], [effect]." Some keyword abilities, such as prowess and fabricate, are triggered abilities and will have "when," "whenever," or "at" in their reminder text.
+Only activated and triggered abilities on the stack can be countered. Static abilities of objects can’t be targeted.
+If you counter a delayed triggered ability that triggers at the beginning of the "next" occurrence of a specified step or phase, that ability won’t trigger again the following time that phase or step occurs.
+An activated mana ability is one that adds mana to a player’s mana pool as it resolves, doesn’t have a target, and isn’t a loyalty ability. A triggered mana ability is one that adds mana to a player’s mana pool and triggers on an activated mana ability.
+Abilities that create replacement effects, such as a permanent entering the battlefield tapped or with counters on it, can’t be targeted. Abilities that apply "as [this creature] enters the battlefield" are also replacement effects and can’t be targeted.

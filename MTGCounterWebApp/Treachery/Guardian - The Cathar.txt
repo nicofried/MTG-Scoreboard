@@ -1,0 +1,4 @@
+You can’t pay the unveil cost if your life total is less than 6.
+If The Cathar’s controller loses the game before the triggered ability resolves, the targeted permanents won't be exiled.
+Auras attached to the exiled permanents will be put into their owners' graveyards. Any Equipment will become unattached and remain on the battlefield. Any counters on the exiled permanent will cease to exist. When the card returns to the battlefield, it will be a new object with no connection to the card that was exiled.
+If a token is exiled this way, it will cease to exist and won't return to the battlefield.

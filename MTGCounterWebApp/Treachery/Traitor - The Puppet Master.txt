@@ -1,0 +1,8 @@
+Except for you, you choose which player gets which identity card when the unveiling triggered ability resolves.
+Other players can respond to The Puppet Master's unveiling triggered ability. They can use their own Identity's unveil ability while they have priority. Afterwards, those identity cards could be turned face down during the resolution of The Puppet Master's ability.
+Once The Puppet Master’s unveiling triggered ability begins to resolve, no player may take other actions until it’s done. Notably, opponents won’t be allowed to unveil their identity card.
+When The Puppet Master’s unveiling triggered ability starts to resolve, for each other player, you can choose to (a) leave their identity card as they are or (b) exchange control of that identity with another one (not being The Puppet Master). You can’t choose to have a player controls no identity card.
+Except for The Puppet Master and the Leader, you choose which identity card is turned face down. You may choose an identity card whose control didn’t change.
+If a player concedes during the resolution of The Puppet Master's unveiling triggered ability, their identity card leaves the game and no one gains control of it. If that player would have gained control of another identity card, instead assign that identity card to another player with no identity card assigned.
+The Puppet Master’s last ability can trigger only while the identity card is face up.
+Each player’s win conditions change according to their new role.

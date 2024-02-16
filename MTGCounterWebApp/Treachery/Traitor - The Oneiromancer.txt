@@ -1,0 +1,9 @@
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
+An effect that instructs you to "cast" a card doesn’t allow you to play lands.
+If another player gains control of The Oneiromancer, that player can see all of the exiled cards and may play them. Once a player looks at a face-down exiled card, that player may look at that card any time later in the game.
+The Oneiromancer doesn’t change when you can cast the exiled card. For example, if you exile a creature card without flash, you can cast it only during your main phase when the stack is empty.
+Because you’re already casting the cards using an alternative cost (by casting them without paying their mana costs), you can’t pay any other alternative costs for the cards, including casting them face down using the morph ability. You can pay additional costs, such as kicker costs. If the cards have any mandatory additional costs, you must pay those.
+If a card has {X} in its mana cost, you must choose 0 as the value for X when casting it.
+Any cards you don’t cast this way will remain in exile.
+Casting the card causes it to leave exile. You can’t cast it multiple times.
+If you leave the game, the cards remain exiled face down indefinitely. No player may look at them.

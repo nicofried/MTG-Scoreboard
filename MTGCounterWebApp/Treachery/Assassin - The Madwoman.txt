@@ -1,0 +1,1 @@
+Tapping a creature is part of the effect, therefore you can target a tapped creature.

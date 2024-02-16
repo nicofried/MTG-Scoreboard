@@ -155,3 +155,8 @@ a {
         padding: 0 10px; /* Adjust padding for smaller screens */
     }
 }
+.centered-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

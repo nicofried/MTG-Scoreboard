@@ -1,0 +1,11 @@
+The Bio-Engineer’s third and fourth abilities can be activated only while the identity card is face up.
+It’s the ability, not the counter that makes the creature an artifact. The creature remains an artifact even if the +1/+1 counter is removed.
+The effect of The Bio-Engineer’s fourth ability last indefinitely. You won’t lose control of the permanents if you lose control of The Bio-Engineer or if it’s turned face down.
+If you gain control of a permanent, and you leave the game, the control-changing effect will end. Unless there’s another control-changing effect affecting that permanent, it will return to its owner’s control.
+If you gain control of a permanent another player owns, and that player leaves the game, the permanent will also leave the game.
+{a} is the nut symbol. It represents one nut counter.
+Nut counters are a kind of counter that a player may have. They’re not associated with specific permanents. (Other kinds of counters that players may have include poison, energy and experience.)
+Keep careful track of how many nut counters the Leader player has. You may do so by keeping a running count on paper, by using a die on that card, or by any other clear and mutually agreeable method.
+If an effect says you get one or more {a}, you get that many nut counters. To pay one or more {a}, you lose that many nut counters. Any effects that interact with counters a player gets, has, or loses can interact with nut counters.
+Nut counters aren’t mana. They don’t go away as steps, phases, and turns end, and effects that add mana "of any type" to your mana pool can’t give you nut counters.
+You can’t pay more nut counters than you have.

@@ -1,0 +1,5 @@
+The Spellsnatcher’s unveiling triggered ability can target any spell, even one without targets.
+If you gain control of an instant or sorcery spell, it will be put into its owner’s graveyard as it resolves.
+You may change any or none of the spell’s targets. If you change a target, you must choose a legal target for the spell. If you can’t, you must leave the target unchanged (even if the current target is illegal). Notably, if you were originally chosen as a "target opponent" for a spell you gain control with The Spellsnatcher, you are now an illegal target as you aren’t your own opponent.
+Combat damage dealt by a commander is tracked without regard to who controlled the commander at the time it dealt damage. For example, say a commander deals 10 combat damage to a player, leaves the battlefield, is recast, and you gain control of it with The Spellsnatcher. If it deals another 11 combat damage to that same player, they will lose the game.
+If you gain control of a commander spell, the commander’s owner chooses whether to put it in the command zone if it later leaves the battlefield.

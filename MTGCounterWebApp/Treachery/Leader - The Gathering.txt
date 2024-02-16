@@ -1,0 +1,6 @@
+You choose the mode as the triggered ability goes on the stack. You can choose a mode that requires targets only if there are legal targets available.
+If the ability is countered (either for having its target become illegal or because a spell or ability counters it), the mode chosen for that instance of the ability still counts as being chosen.
+The phrase "that hasn’t been chosen" refers only to that specific The Gathering.
+It doesn’t matter who has chosen any particular mode. For example, say you control The Gathering and have chosen the first three modes. If an opponent gains control of The Gathering, that player can choose only the fourth or fifth mode.
+In some very unusual situations, you may not be able to choose a mode, either because all modes have previously been chosen or the only remaining modes require targets and there are no legal targets available. In this case, the ability is simply removed from the stack with no effect.
+Keep careful track of which modes the Leader player has already chosen. You may do so by keeping a running count on paper, by using colored counters on that card, by using one basic land card of each color under that card, or by any other clear and mutually agreeable method.

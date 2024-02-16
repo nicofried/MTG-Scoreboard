@@ -1,0 +1,4 @@
+If The Pyromancer doesn’t deal damage to a creature (perhaps because that damage was prevented), neither additional effect will apply. It won’t lose indestructible.
+Creatures with indestructible that enter the battlefield after The Pyromancer’s unveiling triggered ability resolves will still have indestructible.
+Once The Pyromancer’s unveiling triggered ability begins to resolve, no player may take actions until it’s done. Notably, players can’t try to give a creature indestructible again to save it from the damage.
+An identity card has no color.

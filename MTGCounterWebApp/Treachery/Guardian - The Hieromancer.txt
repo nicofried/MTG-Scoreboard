@@ -1,0 +1,2 @@
+The second part of The Hieromancer’s effect affects all creatures controlled by non-Leader players as it resolves, not just the ones that The Hieromancer actually caused to become tapped.
+If a permanent affected by The Hieromancer changes controllers before its old controller’s next untap step, The Hieromancer will prevent it from becoming untapped during its new controller’s next untap step.

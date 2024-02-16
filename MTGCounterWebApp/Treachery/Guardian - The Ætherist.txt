@@ -1,0 +1,2 @@
+The Ætherist’s unveiling triggered ability can target a spell that can’t be countered. When the ability resolves, that spell won’t be countered, but the targeted player will still gain life and add mana to their mana pool at the beginning of their next main phase.
+If the target spell is an illegal target when The Ætherist’s unveiling triggered ability tries to resolve, the targeted player still gets life and mana.

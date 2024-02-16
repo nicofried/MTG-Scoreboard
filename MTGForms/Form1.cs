@@ -19,6 +19,7 @@ using System.Drawing.Imaging;
 using System.Net.Sockets;
 using System.Net;
 using static QRCoder.PayloadGenerator;
+using System.Runtime.InteropServices;
 
 
 namespace SE_MTG
@@ -549,6 +550,7 @@ namespace SE_MTG
                     try
                     {
                         await FetchAndDisplayCardImage(cardName, correspondingPictureBox); // Call the new method
+
                     }
                     catch (Exception ex)
                     {
@@ -568,9 +570,16 @@ namespace SE_MTG
             // You can reuse the code from your FetchAndSaveCardImage method
             await FetchAndSaveCardImage(cardName, pictureBox);
         }
+
+
+
+
         private async Task FetchAndSaveCardImage(string cardName, PictureBox pictureBox)
         {
+            string relativePathToWebRoot = Path.Combine(Application.StartupPath, "wwwroot","images","Cards");
+            string webRootPath = Path.GetFullPath(relativePathToWebRoot);
             string cardsFolderPath = Path.Combine(Application.StartupPath, "Cards");
+            string webCardsFolderPath = Path.Combine(webRootPath);
             string urlFilePath = Path.Combine(Application.StartupPath, "ImageUrl.txt");
             string errorFilePath = Path.Combine(Application.StartupPath, "ErrorLog.txt");
 
@@ -595,6 +604,10 @@ namespace SE_MTG
                         string actualCardName = cardData.name;
                         string imageFileName = SanitizeFileName(actualCardName) + ".jpg";
                         string filePath = Path.Combine(cardsFolderPath, imageFileName);
+                        string webFilePath = Path.Combine("images","cards",imageFileName);
+                        string webFilePathSave = Path.Combine(webCardsFolderPath, imageFileName);
+                        Console.WriteLine("Relative Path: " + webFilePathSave);
+                        Console.WriteLine("Normal Path: " + filePath);
                         string rulingsUri = cardData.rulings_uri;
                         string imageUrl = cardData.image_uris.large;
 
@@ -611,6 +624,7 @@ namespace SE_MTG
                                     pictureBox.Image = image;
                                     pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
                                     image.Save(filePath);
+                                    image.Save(webFilePathSave);
                                 }
 
                                 pictureBox.ImageLocation = filePath;
@@ -642,6 +656,7 @@ namespace SE_MTG
 
                                 // Use the same base name as the image file, but with a .txt extension
                                 string rulingsFilePath = Path.Combine(cardsFolderPath, SanitizeFileName(actualCardName) + ".txt");
+
                                 File.WriteAllText(rulingsFilePath, rulingsText.ToString());
                             }
                             else
@@ -650,6 +665,37 @@ namespace SE_MTG
                             }
                         }
 
+                        // Switch statement to determine which variable to update based on the PictureBox
+                        switch (pictureBox.Name)
+                        {
+                            case "CommanderImage1":
+                                CommanderImage1Path = webFilePath;
+                                break;
+                            case "CommanderImage2":
+                                CommanderImage2Path = webFilePath;
+                                break;
+                            case "CommanderImage3":
+                                CommanderImage3Path = webFilePath;
+                                break;
+                            case "CommanderImage4":
+                                CommanderImage4Path = webFilePath;
+                                break;
+                            case "CommanderImage5":
+                                CommanderImage5Path = webFilePath;
+                                break;
+                            case "CommanderImage6":
+                                CommanderImage6Path = webFilePath;
+                                break;
+                            case "CommanderImage7":
+                                CommanderImage7Path = webFilePath;
+                                break;
+                            case "CommanderImage8":
+                                CommanderImage8Path = webFilePath;
+                                break;
+                            default:
+                                break;
+                                // Handle default case if needed
+                        }
                     }
                     else
                     {
@@ -666,6 +712,7 @@ namespace SE_MTG
 
             pictureBox.Invalidate();
         }
+
         private string SanitizeFileName(string fileName)
         {
             // Remove invalid characters from filename
@@ -840,6 +887,9 @@ namespace SE_MTG
                 if (selectedPictureBox != null && !string.IsNullOrWhiteSpace(selectedCardName))
                 {
                     _ = FetchAndDisplayCardImage(selectedCardName, selectedPictureBox); // Suppress the warning
+
+
+
                 }
             }
         }
@@ -3420,6 +3470,16 @@ namespace SE_MTG
         public string Treachery7ImagePath { get { return TreacheryImage7; } } // Expose Treachery7 image path
         public string Treachery8ImagePath { get { return TreacheryImage8; } } // Expose Treachery8 image path
 
+        public string Player1ImagePath { get { return CommanderImage1Path; } }
+        public string Player2ImagePath { get { return CommanderImage2Path; } }
+        public string Player3ImagePath { get { return CommanderImage3Path; } }
+        public string Player4ImagePath { get { return CommanderImage4Path; } }
+        public string Player5ImagePath { get { return CommanderImage5Path; } }
+        public string Player6ImagePath { get { return CommanderImage6Path; } }
+        public string Player7ImagePath { get { return CommanderImage7Path; } }
+        public string Player8ImagePath { get { return CommanderImage8Path; } }
+
+
         public string TreacheryRule1Path { get { return TreacheryRule1; } } // Expose Treachery1 image path
         public string TreacheryRule2Path { get { return TreacheryRule2; } } // Expose Treachery1 image path
         public string TreacheryRule3Path { get { return TreacheryRule3; } } // Expose Treachery1 image path
@@ -3632,6 +3692,16 @@ namespace SE_MTG
         public static string TreacheryImage1, TreacheryImage2, TreacheryImage3, TreacheryImage4,
                              TreacheryImage5, TreacheryImage6, TreacheryImage7, TreacheryImage8;
 
+        public static string CommanderImage1Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage2Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage3Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage4Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage5Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage6Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage7Path = "images/cards/Commander Conundrum.jpg";
+        public static string CommanderImage8Path = "images/cards/Commander Conundrum.jpg";
+
+
         private async void Commander1_TextChanged(object sender, EventArgs e)
         {
             // Assuming CommanderSelector is your ComboBox name
@@ -3731,6 +3801,7 @@ namespace SE_MTG
                 if (selectedPictureBox != null && !string.IsNullOrWhiteSpace(selectedCardName))
                 {
                     _ = FetchAndDisplayCardImage(selectedCardName, selectedPictureBox); // Suppress the warning
+
                 }
             }
         }

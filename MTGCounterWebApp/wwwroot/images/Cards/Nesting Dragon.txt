@@ -1,0 +1,1 @@
+Because Nesting Dragon’s landfall ability doesn’t assign a name to the tokens, the tokens are named by their given creature types: “Dragon Egg.” This means that the creatures have the same name as the creature card Dragon Egg, although the tokens have no mana cost and their converted mana cost is 0.

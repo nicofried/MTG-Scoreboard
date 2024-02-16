@@ -1,0 +1,27 @@
+---------- The following rulings focus on what it means if your life total can't change ----------
+Spells and abilities that would normally cause you to gain or lose life still resolve while your life total can't change, but the life-gain or life-loss part simply has no effect.
+---------- The following rulings focus on the “protection from” keyword ----------
+If a player has protection from everything, it means three things: 1) All damage that would be dealt to that player is prevented. 2) Auras can't be attached to that player. 3) That player can't be the target of spells or abilities.
+Nothing other than the specified events are prevented or illegal. An effect that doesn't target you could still cause you to discard cards, for example. Creatures can still attack you while you have protection from everything, although combat damage that they would deal to you will be prevented.
+Gaining protection from everything causes a spell or ability on the stack to have an illegal target if it targets you. As a spell or ability tries to resolve, if all its targets are illegal, that spell or ability doesn't resolve and none of its effects happen, including effects unrelated to the target. If at least one target is still legal, the spell or ability does as much as it can to the remaining legal targets, and its other effects still happen.
+Protection from everything will usually prevent damage if it would be dealt to you, but some damage can't be prevented. In this case, because your life total also can't change, that damage has any other effects that it may have aside from causing you to lose that much life (such as effects from lifelink or infect) and triggers and effects can see that damage was dealt even though your life total didn't change.
+You can't pay a cost that includes the payment of any amount of life other than 0 life.
+If a cost includes causing you to gain life (like the alternative cost of an opponent's Invigorate does), that cost can't be paid.
+Effects that would replace having you gain life with some other event won't be able to be applied because it's impossible for you to gain life. The same is true for effects that would replace having you lose life with some other event.
+Effects that replace an event with having you gain life (like Words of Worship's effect does) or having you lose life will apply and end up replacing the event with nothing.
+If an effect would set your life total to a certain number that's different than your current life total, that part of the effect won't do anything.
+If an effect would cause you to exchange life totals with another player, the exchange won't happen. Neither player's life total changes.
+---------- The following rulings focus on the phasing keyword ----------
+While a permanent is phased out, it's treated as though it doesn't exist. It can't be the target of spells or abilities, its static abilities have no effect on the game, its triggered abilities can't trigger, it can't attack or block, and so on.
+Phasing out doesn't cause any “leaves the battlefield” abilities to trigger. Similarly, phasing in won't cause any “enters the battlefield” abilities to trigger.
+Any one-shot effects that are waiting “until [this] leaves the battlefield,” such as that of Banishing Light, won't happen when a permanent phases out.
+Any continuous effects with a “for as long as” duration such as that of Mathas, Fiend Seeker ignore phased-out objects. Any such effects will expire if their conditions are no longer met after ignoring the phased-out objects.
+Each Aura and Equipment that phases out attached to a permanent that's phasing out phases in with that permanent and still attached to it.
+Each Aura and Equipment you control attached to a permanent that isn't phasing out phases in attached to that permanent if it can still be attached to that permanent. If not, it phases in unattached. An Aura that phases in unattached will be put into its owner's graveyard as a state-based action. The same is true with Auras attached to players.
+Permanents that phase out with counters phase in with those counters.
+Choices made for permanents as they entered the battlefield are remembered when they phase in.
+If a token is phased out, it will phase in as your next untap step begins. This is a change from previous rules.
+A permanent phasing out causes a spell or ability on the stack to have an illegal target if it targets that permanent. As a spell or ability tries to resolve, if all its targets are illegal, that spell or ability doesn't resolve and none of its effects happen, including effects unrelated to the target. If at least one target is still legal, the spell or ability does as much as it can to the remaining legal targets, and its other effects still happen.
+If your untap step is somehow skipped as your next turn begins, your phased-out permanents won't phase in until the next untap step you actually have, but you'll no longer have protection from everything and your life total can change again.
+Any creatures that phase in under your control as your next untap step begins will be able to attack and pay a cost of {T} during that turn.
+If you gain control of another player's permanent and it phases out, if the duration of the control-change effect expires before it phases in, that permanent phases in under that other player's control as your next untap step begins. If you leave the game before your next untap step, it phases in as the next untap step begins after your turn would have begun.

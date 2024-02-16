@@ -1,4 +1,3 @@
-NOTES AND RULES INFORMATION FOR THE AUGUR
 The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
 If X is 0, you won’t scry at all. Any abilities that trigger whenever you scry won’t trigger.
 Once The Augur’s unveiling triggered ability begins to resolve, no player may take other actions until it’s done. Notably, opponents can’t try to change your library after you scry but before you reveal the top card of your library.

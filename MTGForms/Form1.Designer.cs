@@ -970,6 +970,7 @@
             this.WifiConnect.Size = new System.Drawing.Size(125, 125);
             this.WifiConnect.TabIndex = 405;
             this.WifiConnect.TabStop = false;
+            this.WifiConnect.Tag = "";
             // 
             // wificonnector
             // 

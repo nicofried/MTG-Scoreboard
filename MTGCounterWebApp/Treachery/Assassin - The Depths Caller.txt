@@ -1,0 +1,2 @@
+The X in the unveiling triggered ability has the same value as the X paid in the Unveil ability. This is pretty easy to derive since there is no other source of X.
+Once The Depths Caller’s unveiling triggered ability begins to resolve, no players may take other actions until it’s done. Notably, players can’t try to destroy your permanents after you’ve chosen a type.

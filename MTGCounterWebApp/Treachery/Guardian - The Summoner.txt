@@ -1,0 +1,2 @@
+The X and Y in the unveiling triggered ability have the same value as the X and Y paid in the Unveil ability. This is pretty easy to derive since there is no other sources of X and Y.
+The term "another" in the Undercover restriction means neither you nor a Leader player.

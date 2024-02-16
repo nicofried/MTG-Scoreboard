@@ -1,0 +1,1 @@
+You can’t pay the unveil cost if you have no cards in hand or if your life total is less than 2.

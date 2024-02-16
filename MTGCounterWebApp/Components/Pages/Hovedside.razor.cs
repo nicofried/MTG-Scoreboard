@@ -51,6 +51,16 @@ namespace MTGCounter.Components.Pages
         public string Playername6 { get; set; } = Form1.Instance.Player6Name;
         public string Playername7 { get; set; } = Form1.Instance.Player7Name;
         public string Playername8 { get; set; } = Form1.Instance.Player8Name;
+        public string Player1ImagePath { get; set; } = Form1.Instance.Player1ImagePath;
+        public string Player2ImagePath { get; set; } = Form1.Instance.Player2ImagePath;
+        public string Player3ImagePath { get; set; } = Form1.Instance.Player3ImagePath;
+        public string Player4ImagePath { get; set; } = Form1.Instance.Player4ImagePath;
+        public string Player5ImagePath { get; set; } = Form1.Instance.Player5ImagePath;
+        public string Player6ImagePath { get; set; } = Form1.Instance.Player6ImagePath;
+        public string Player7ImagePath { get; set; } = Form1.Instance.Player7ImagePath;
+        public string Player8ImagePath { get; set; } = Form1.Instance.Player8ImagePath;
+
+
         protected override void OnInitialized()
         {
             _timer?.Dispose(); // Ensure no timer is running before creating a new one
@@ -61,6 +71,14 @@ namespace MTGCounter.Components.Pages
         {
             InvokeAsync(() =>
             {
+                Player1ImagePath = Form1.Instance.Player1ImagePath;
+                Player2ImagePath = Form1.Instance.Player2ImagePath;
+                Player3ImagePath = Form1.Instance.Player3ImagePath;
+                Player4ImagePath = Form1.Instance.Player4ImagePath;
+                Player5ImagePath = Form1.Instance.Player5ImagePath;
+                Player6ImagePath = Form1.Instance.Player6ImagePath;
+                Player7ImagePath = Form1.Instance.Player7ImagePath;
+                Player8ImagePath = Form1.Instance.Player8ImagePath;
                 Playername1 = Form1.Instance.Player1Name;
                 Playername2 = Form1.Instance.Player2Name;
                 Playername3 = Form1.Instance.Player3Name;
@@ -159,6 +177,22 @@ namespace MTGCounter.Components.Pages
                 case 6: return Playername6;
                 case 7: return Playername7;
                 case 8: return Playername8;
+                default: return "Unknown Player";
+            }
+        }
+
+        public string GetPlayerCard(int playerNumber)
+        {
+            switch (playerNumber)
+            {
+                case 1: return Player1ImagePath;
+                case 2: return Player2ImagePath;
+                case 3: return Player3ImagePath;
+                case 4: return Player4ImagePath;
+                case 5: return Player5ImagePath;
+                case 6: return Player6ImagePath;
+                case 7: return Player7ImagePath;
+                case 8: return Player8ImagePath;
                 default: return "Unknown Player";
             }
         }

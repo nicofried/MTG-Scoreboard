@@ -17,6 +17,7 @@
     <None Remove="Cards\Atla Palani, Nest Tender.txt" />
     <None Remove="Cards\Blightsteel Colossus.jpg" />
     <None Remove="Cards\Blightsteel Colossus.txt" />
+    <None Remove="Cards\Commander Conundrum.jpg" />
     <None Remove="Cards\Ezuri, Claw of Progress.jpg" />
     <None Remove="Cards\Ezuri, Claw of Progress.txt" />
     <None Remove="Cards\Faldorn, Dread Wolf Herald.jpg" />
@@ -55,63 +56,114 @@
     <None Remove="Cards\The Ur-Dragon.txt" />
     <None Remove="Radzen Code snippets for Menu Cards.txt" />
     <None Remove="Treachery\Assassin - The Ambitious Queen.jpg" />
+    <None Remove="Treachery\Assassin - The Ambitious Queen.txt" />
     <None Remove="Treachery\Assassin - The Beastmaster.jpg" />
+    <None Remove="Treachery\Assassin - The Beastmaster.txt" />
     <None Remove="Treachery\Assassin - The Bio-Engineer.jpg" />
+    <None Remove="Treachery\Assassin - The Bio-Engineer.txt" />
     <None Remove="Treachery\Assassin - The Corpse Snatcher.jpg" />
+    <None Remove="Treachery\Assassin - The Corpse Snatcher.txt" />
     <None Remove="Treachery\Assassin - The Demon.jpg" />
+    <None Remove="Treachery\Assassin - The Demon.txt" />
     <None Remove="Treachery\Assassin - The Depths Caller.jpg" />
+    <None Remove="Treachery\Assassin - The Depths Caller.txt" />
     <None Remove="Treachery\Assassin - The Madwoman.jpg" />
+    <None Remove="Treachery\Assassin - The Madwoman.txt" />
     <None Remove="Treachery\Assassin - The Necromancer.jpg" />
+    <None Remove="Treachery\Assassin - The Necromancer.txt" />
     <None Remove="Treachery\Assassin - The Pyromancer.jpg" />
+    <None Remove="Treachery\Assassin - The Pyromancer.txt" />
     <None Remove="Treachery\Assassin - The Rebel General.jpg" />
+    <None Remove="Treachery\Assassin - The Rebel General.txt" />
     <None Remove="Treachery\Assassin - The Seer.jpg" />
+    <None Remove="Treachery\Assassin - The Seer.txt" />
     <None Remove="Treachery\Assassin - The Shapeshifting Slayer.jpg" />
+    <None Remove="Treachery\Assassin - The Shapeshifting Slayer.txt" />
     <None Remove="Treachery\Assassin - The Sigil Mage.jpg" />
+    <None Remove="Treachery\Assassin - The Sigil Mage.txt" />
     <None Remove="Treachery\Assassin - The Sorceress.jpg" />
+    <None Remove="Treachery\Assassin - The Sorceress.txt" />
     <None Remove="Treachery\Assassin - The War Shaman.jpg" />
+    <None Remove="Treachery\Assassin - The War Shaman.txt" />
     <None Remove="Treachery\Assassin - The Witch.jpg" />
+    <None Remove="Treachery\Assassin - The Witch.txt" />
     <None Remove="Treachery\Guardian - The Augur.jpg" />
     <None Remove="Treachery\Guardian - The Augur.txt" />
     <None Remove="Treachery\Guardian - The Bodyguard.jpg" />
+    <None Remove="Treachery\Guardian - The Bodyguard.txt" />
     <None Remove="Treachery\Guardian - The Cathar.jpg" />
+    <None Remove="Treachery\Guardian - The Cathar.txt" />
     <None Remove="Treachery\Guardian - The Cryomancer.jpg" />
+    <None Remove="Treachery\Guardian - The Cryomancer.txt" />
     <None Remove="Treachery\Guardian - The Flickering Mage.jpg" />
+    <None Remove="Treachery\Guardian - The Flickering Mage.txt" />
     <None Remove="Treachery\Guardian - The Golem.jpg" />
+    <None Remove="Treachery\Guardian - The Golem.txt" />
     <None Remove="Treachery\Guardian - The Great Martyr.jpg" />
+    <None Remove="Treachery\Guardian - The Great Martyr.txt" />
     <None Remove="Treachery\Guardian - The Hieromancer.jpg" />
+    <None Remove="Treachery\Guardian - The Hieromancer.txt" />
     <None Remove="Treachery\Guardian - The Immortal.jpg" />
+    <None Remove="Treachery\Guardian - The Immortal.txt" />
     <None Remove="Treachery\Guardian - The Marshal.jpg" />
+    <None Remove="Treachery\Guardian - The Marshal.txt" />
     <None Remove="Treachery\Guardian - The Oracle.jpg" />
+    <None Remove="Treachery\Guardian - The Oracle.txt" />
     <None Remove="Treachery\Guardian - The Spellsnatcher.jpg" />
+    <None Remove="Treachery\Guardian - The Spellsnatcher.txt" />
     <None Remove="Treachery\Guardian - The Summoner.jpg" />
+    <None Remove="Treachery\Guardian - The Summoner.txt" />
     <None Remove="Treachery\Guardian - The Supplier.jpg" />
+    <None Remove="Treachery\Guardian - The Supplier.txt" />
     <None Remove="Treachery\Guardian - The Warlock.jpg" />
+    <None Remove="Treachery\Guardian - The Warlock.txt" />
     <None Remove="Treachery\Guardian - The Ætherist.jpg" />
+    <None Remove="Treachery\Guardian - The Ætherist.txt" />
     <None Remove="Treachery\Leader - Her Seedborn Highness.jpg" />
+    <None Remove="Treachery\Leader - Her Seedborn Highness.txt" />
     <None Remove="Treachery\Leader - His Beloved Majesty.jpg" />
+    <None Remove="Treachery\Leader - His Beloved Majesty.txt" />
     <None Remove="Treachery\Leader - The Blood Empress.jpg" />
     <None Remove="Treachery\Leader - The Blood Empress.txt" />
     <None Remove="Treachery\Leader - The Chaos Bringer.jpg" />
+    <None Remove="Treachery\Leader - The Chaos Bringer.txt" />
     <None Remove="Treachery\Leader - The Corrupted Regent.jpg" />
+    <None Remove="Treachery\Leader - The Corrupted Regent.txt" />
     <None Remove="Treachery\Leader - The Gathering.jpg" />
+    <None Remove="Treachery\Leader - The Gathering.txt" />
     <None Remove="Treachery\Leader - The King over the Scrapyard.jpg" />
+    <None Remove="Treachery\Leader - The King over the Scrapyard.txt" />
     <None Remove="Treachery\Leader - The Old Ruler.jpg" />
+    <None Remove="Treachery\Leader - The Old Ruler.txt" />
     <None Remove="Treachery\Leader - The Queen of Light.jpg" />
+    <None Remove="Treachery\Leader - The Queen of Light.txt" />
     <None Remove="Treachery\Leader - The Twin Princesses.jpg" />
+    <None Remove="Treachery\Leader - The Twin Princesses.txt" />
     <None Remove="Treachery\Leader - The Void Tyrant.jpg" />
+    <None Remove="Treachery\Leader - The Void Tyrant.txt" />
     <None Remove="Treachery\MTGPlaygroup.jpg" />
     <None Remove="Treachery\Traitor - The Banisher.jpg" />
+    <None Remove="Treachery\Traitor - The Banisher.txt" />
     <None Remove="Treachery\Traitor - The Cleaner.jpg" />
+    <None Remove="Treachery\Traitor - The Cleaner.txt" />
     <None Remove="Treachery\Traitor - The Ferryman.jpg" />
+    <None Remove="Treachery\Traitor - The Ferryman.txt" />
     <None Remove="Treachery\Traitor - The Gatekeeper.jpg" />
+    <None Remove="Treachery\Traitor - The Gatekeeper.txt" />
     <None Remove="Treachery\Traitor - The Grenadier.jpg" />
     <None Remove="Treachery\Traitor - The Grenadier.txt" />
     <None Remove="Treachery\Traitor - The Metamorph.jpg" />
+    <None Remove="Treachery\Traitor - The Metamorph.txt" />
     <None Remove="Treachery\Traitor - The Oneiromancer.jpg" />
+    <None Remove="Treachery\Traitor - The Oneiromancer.txt" />
     <None Remove="Treachery\Traitor - The Puppet Master.jpg" />
+    <None Remove="Treachery\Traitor - The Puppet Master.txt" />
     <None Remove="Treachery\Traitor - The Reflector.jpg" />
+    <None Remove="Treachery\Traitor - The Reflector.txt" />
     <None Remove="Treachery\Traitor - The Time Bender.jpg" />
+    <None Remove="Treachery\Traitor - The Time Bender.txt" />
     <None Remove="Treachery\Traitor - The Wearer of Masks.jpg" />
+    <None Remove="Treachery\Traitor - The Wearer of Masks.txt" />
     <None Remove="Treachery\Treachery1.jpg" />
     <None Remove="Wizard.ico" />
   </ItemGroup>
@@ -142,6 +194,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Cards\Blightsteel Colossus.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cards\Commander Conundrum.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Cards\Ezuri, Claw of Progress.jpg">
@@ -258,49 +313,97 @@
     <Content Include="Treachery\Assassin - The Ambitious Queen.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Ambitious Queen.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Beastmaster.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Beastmaster.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Bio-Engineer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Bio-Engineer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Corpse Snatcher.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Corpse Snatcher.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Demon.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Demon.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Depths Caller.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Depths Caller.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Madwoman.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Madwoman.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Necromancer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Necromancer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Pyromancer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Pyromancer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Rebel General.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Rebel General.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Seer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Seer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Shapeshifting Slayer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Shapeshifting Slayer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The Sigil Mage.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The Sigil Mage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Sorceress.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Sorceress.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Assassin - The War Shaman.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Assassin - The War Shaman.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Assassin - The Witch.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Assassin - The Witch.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Augur.jpg">
@@ -312,52 +415,103 @@
     <Content Include="Treachery\Guardian - The Bodyguard.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Bodyguard.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Cathar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Cathar.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Cryomancer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Cryomancer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Flickering Mage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Flickering Mage.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Golem.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Golem.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Great Martyr.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Great Martyr.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Hieromancer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Hieromancer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Immortal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Immortal.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Marshal.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Marshal.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Oracle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Oracle.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Spellsnatcher.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Spellsnatcher.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Summoner.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Summoner.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Supplier.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Supplier.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Guardian - The Warlock.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Guardian - The Warlock.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Guardian - The Ætherist.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Guardian - The Ætherist.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - Her Seedborn Highness.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Leader - Her Seedborn Highness.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - His Beloved Majesty.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Leader - His Beloved Majesty.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Leader - The Blood Empress.jpg">
@@ -369,25 +523,49 @@
     <Content Include="Treachery\Leader - The Chaos Bringer.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Leader - The Chaos Bringer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - The Corrupted Regent.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Leader - The Corrupted Regent.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Leader - The Gathering.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Leader - The Gathering.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - The King over the Scrapyard.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Leader - The King over the Scrapyard.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Leader - The Old Ruler.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Leader - The Old Ruler.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - The Queen of Light.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Leader - The Queen of Light.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Leader - The Twin Princesses.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Leader - The Twin Princesses.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Leader - The Void Tyrant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Leader - The Void Tyrant.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\MTGPlaygroup.jpg">
@@ -396,13 +574,25 @@
     <Content Include="Treachery\Traitor - The Banisher.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Traitor - The Banisher.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Traitor - The Cleaner.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Traitor - The Cleaner.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Traitor - The Ferryman.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Traitor - The Ferryman.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Traitor - The Gatekeeper.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Traitor - The Gatekeeper.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Traitor - The Grenadier.jpg">
@@ -414,19 +604,37 @@
     <Content Include="Treachery\Traitor - The Metamorph.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Traitor - The Metamorph.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Traitor - The Oneiromancer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Traitor - The Oneiromancer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Traitor - The Puppet Master.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Traitor - The Puppet Master.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Traitor - The Reflector.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Traitor - The Reflector.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Traitor - The Time Bender.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Treachery\Traitor - The Time Bender.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Treachery\Traitor - The Wearer of Masks.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Treachery\Traitor - The Wearer of Masks.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Treachery\Treachery1.jpg">
@@ -492,6 +700,129 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Atla Palani, Nest Tender.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Atla Palani, Nest Tender.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Blightsteel Colossus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Blightsteel Colossus.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Commander Conundrum.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Ezuri, Claw of Progress.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Ezuri, Claw of Progress.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Faldorn, Dread Wolf Herald.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Faldorn, Dread Wolf Herald.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Icy Manipulator.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Icy Manipulator.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\King of the Oathbreakers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\King of the Oathbreakers.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Lord of the Void.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Lord of the Void.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre Girl, Known Killer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre Girl, Known Killer.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre Girl.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre Girl.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Massacre.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Miirym, Sentinel Wyrm.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Miirym, Sentinel Wyrm.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Morska, Undersea Sleuth.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Morska, Undersea Sleuth.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Nesting Dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Nesting Dragon.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Omnath, Locus of Creation.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Omnath, Locus of Creation.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Player Dead.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Player Dead.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Ramos, Dragon Engine.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Ramos, Dragon Engine.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Sidar Jabari of Zhalfir.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Sidar Jabari of Zhalfir.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Sidar Jabari.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Sidar Jabari.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Teferi%27s Protection.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\Teferi%27s Protection.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\The Ur-Dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Cards\The Ur-Dragon.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\images\login.jpg">

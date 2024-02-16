@@ -1,0 +1,6 @@
+You always perform your normal draw before this ability. The normal draw occurs before anything can be placed on the stack during a player’s draw step.
+If you control other triggered abilities that allow you to draw cards during your draw step, you can choose to order The Corrupted Regent’s ability before or after those abilities. Triggered abilities controlled by other players will resolve before triggered abilities you control.
+Any cards drawn prior to The Corrupted Regent’s ability resolving, including in your upkeep or in response to The Corrupted Regent’s triggered ability, can be chosen to be put back using this effect. The Corrupted Regent’s controller is responsible for keeping these cards distinguishable in hand, such as by keeping them separate from cards that began the turn in hand.
+You can put back zero or one card.
+If you choose to draw a card, then replace that draw with some other effect, the rest of The Corrupted Regent’s ability still happens. If you’ve actually drawn only one card that turn, you must choose that card and either pay 3 life or put it on top of your library. If you haven’t actually drawn any cards that turn, the rest of the ability has no effect.
+It’s not possible to take any actions between drawing the cards and choosing a card. You can’t cast the cards you drew to avoid having a card to choose.

@@ -1,0 +1,5 @@
+The Reflector’s unveiling triggered ability can target any instant or sorcery spell, or ability on the stack, even one without targets. Static abilities of objects can’t be targeted.
+If you gain control of an instant or sorcery spell, it will be put into its owner’s graveyard as it resolves.
+If you gain control of an instant or sorcery spell for which a Buyback cost has been paid, the card returns to its owner’s hand.
+You may change any or none of the spell’s targets. If you change a target, you must choose a legal target for the spell. If you can’t, you must leave the target unchanged (even if the current target is illegal). Notably, if you were originally chosen as a "target opponent" for a spell you gain control with The Reflector, you are now an illegal target as you aren’t your own opponent.
+If the target is removed from the stack (e.g. countered) before the unveiling ability resolves, The Reflector will fizzle and do nothing as it is its only target.

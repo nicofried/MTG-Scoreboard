@@ -1,0 +1,9 @@
+The instant or sorcery cards may come from different graveyards.
+You cast the cards one at a time, choosing modes, targets and so on. The last card you cast will be the first one to resolve.
+When casting an instant or sorcery card this way, ignore timing restrictions based on the card’s type. Other timing restrictions, such as "Cast [this card] only during combat," must be followed.
+If you can’t cast one of the target instant or sorcery cards, perhaps because there are no legal targets available, or if you choose not to cast one, it will remain in its owner’s graveyard.
+If you cast a card "without paying its mana cost," you can’t pay alternative costs such as overload costs. You can pay additional costs such as kicker costs. If the card has mandatory additional costs, you must pay those.
+If a card has {X} in its mana cost, you must choose 0 as its value.
+If an instant or sorcery card you cast this way is countered, it will still be exiled.
+If you cast an instant or sorcery spell with cipher this way, you may exile the card encoded on a creature you control. If you can’t, or if you choose not to, the card will end up exiled but not encoded on a creature.
+If an instant or sorcery card you cast this way goes to a zone other than exile or a graveyard, perhaps because one of its abilities says to put it into its owner’s hand, it won’t be exiled. This is true even if the card would be put into a graveyard later that turn.

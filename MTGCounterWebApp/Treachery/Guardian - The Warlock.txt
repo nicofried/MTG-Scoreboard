@@ -1,0 +1,4 @@
+Ending the phase this way means the following things happen in order: 1) All spells and abilities on the stack are exiled. This includes spells and abilities that can’t be countered. 2) If there are any attacking and blocking creatures, they’re removed from combat. 3) State-based actions are checked. No player gets priority, and no triggered abilities are put onto the stack. 4) The current phase and/or step ends. The game skips straight to the next phase.
+If any triggered abilities do trigger during this process, they’re put onto the stack at the beginning of the next step or phase.
+Though other spells and abilities that are exiled won’t get a chance to resolve, they don’t count as being countered.
+The phases of a turn are, in order, beginning, precombat main, combat, postcombat main, and ending.
